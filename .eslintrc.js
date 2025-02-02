@@ -1,7 +1,9 @@
 module.exports = {
   root: true,
-  extends: '@react-native',
+  extends: ['@react-native', 'plugin:prettier/recommended'],
+  plugins: ['simple-import-sort'],
   rules: {
+    'no-console': 'warn',
     'simple-import-sort/imports': [
       1,
       {
@@ -15,4 +17,5 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ['ios', 'android'],
 };
