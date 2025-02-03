@@ -2,11 +2,12 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {Home} from 'app/modules';
-import {HomeNavigator} from 'app/navigation/navigators/HomeNavigator/HomeNavigator.tsx';
 
-import {BottomTabNavigatorScreenNames, NavigatorName} from '../../constants';
+import {BottomTabNavigatorScreenNames, NavigatorNames} from '../../constants';
+import {BottomTabNavigatorParamList} from '../../types/paramLists.ts';
+import {HomeNavigator} from '../HomeNavigator';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<BottomTabNavigatorParamList>();
 
 export function BottomTabNavigator() {
   return (
@@ -18,11 +19,10 @@ export function BottomTabNavigator() {
         },
       }}>
       <Tab.Screen
-        name={NavigatorName.HomeNavigator}
+        name={NavigatorNames.HomeNavigator}
         component={HomeNavigator}
       />
       <Tab.Screen
-        options={{}}
         name={BottomTabNavigatorScreenNames.Favorites}
         component={Home}
       />

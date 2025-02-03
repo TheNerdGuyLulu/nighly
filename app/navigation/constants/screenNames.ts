@@ -1,4 +1,4 @@
-export enum NavigatorName {
+export enum NavigatorNames {
   BottomTabNavigator = 'BottomTabNavigator',
   HomeNavigator = 'HomeNavigator',
 }
