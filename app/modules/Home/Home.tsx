@@ -2,10 +2,10 @@ import React, {useCallback, useMemo} from 'react';
 import {FlatList, ListRenderItemInfo, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-import {HotelGridCard, HotelListCard} from 'app/components/HotelCard';
-import {ListHeader} from 'app/modules/Home/components';
-import {useApi} from 'app/modules/Home/hooks/useApi.ts';
-import {useListDisplayType} from 'app/modules/Home/hooks/useListDisplayType.ts';
+import {HotelGridCard, HotelListCard} from 'app/components';
+
+import {ListHeader} from './components';
+import {useApi, useListDisplayType} from './hooks';
 
 export function Home() {
   const {listDisplayType, onToggleListDisplayType} = useListDisplayType();
@@ -33,7 +33,7 @@ export function Home() {
   );
 
   return (
-    <SafeAreaView edges={['top']}>
+    <SafeAreaView edges={['top', 'left', 'right']}>
       <FlatList<Nightly.Hotel>
         contentContainerStyle={{
           paddingHorizontal: 16,

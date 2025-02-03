@@ -11,7 +11,7 @@ import {IllustrationNightly} from 'app/assets';
 
 type ThumbnailProps = Pick<Nightly.Hotel, 'gallery'> & {
   imageStyle: ImageProps['style'];
-  illustrationStyle: Pick<SvgProps, 'width' | 'height'>;
+  illustrationStyle: SvgProps['style'];
 };
 
 export function Thumbnail({
@@ -26,7 +26,7 @@ export function Thumbnail({
   if (!gallery.length || loadFailed) {
     return (
       <IllustrationNightly
-        {...illustrationStyle}
+        style={illustrationStyle}
         preserveAspectRatio="xMidYMid slice"
       />
     );

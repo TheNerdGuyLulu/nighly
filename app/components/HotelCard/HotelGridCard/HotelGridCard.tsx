@@ -13,7 +13,7 @@ export function HotelGridCard(props: Nightly.Hotel) {
         illustrationStyle={styles.thumbnail}
         gallery={props.gallery}
       />
-      <ContentBody {...props} />
+      <ContentBody {...props} displayType={'card'} />
     </TouchableOpacity>
   );
 }

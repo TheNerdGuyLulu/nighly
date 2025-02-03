@@ -1,20 +1,35 @@
 import {StyleSheet} from 'react-native-unistyles';
 
 export const contentBodyStyles = StyleSheet.create(theme => ({
-  bodyWrapper: {
+  wrapper: {
     flex: 1,
-    padding: 8,
-    rowGap: 6,
+    padding: theme.sizes.s6,
+    rowGap: theme.sizes.s6,
   },
   titleWrapper: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    columnGap: theme.sizes.s8,
   },
   nameText: {
     flex: 1,
     fontSize: 16,
+    fontWeight: '500',
     fontFamily: 'MADE Tommy Soft',
+  },
+  bodyWrapper: {
+    variants: {
+      displayType: {
+        card: {
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
+        },
+        list: {},
+      },
+    },
+  },
+  ratingLocationWrapper: {
+    rowGap: theme.sizes.s4,
   },
   locationText: {
     fontSize: 13,
@@ -23,6 +38,7 @@ export const contentBodyStyles = StyleSheet.create(theme => ({
   pricingWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'flex-end',
   },
   priceText: {
     fontSize: 16,

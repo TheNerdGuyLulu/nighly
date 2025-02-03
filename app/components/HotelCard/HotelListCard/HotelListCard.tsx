@@ -13,7 +13,7 @@ export function HotelListCard(props: Nightly.Hotel) {
         imageStyle={styles.thumbnail}
         gallery={props.gallery}
       />
-      <ContentBody {...props} />
+      <ContentBody {...props} displayType={'list'} />
     </TouchableOpacity>
   );
 }

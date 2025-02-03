@@ -5,6 +5,9 @@ export const ratingStyles = StyleSheet.create(theme => ({
     flexDirection: 'row',
     columnGap: theme.sizes.s8,
     alignItems: 'center',
+    backgroundColor: '#eae8e8',
+    padding: theme.sizes.s4,
+    borderRadius: theme.sizes.s4,
   },
   starIcon: {
     width: 15,
