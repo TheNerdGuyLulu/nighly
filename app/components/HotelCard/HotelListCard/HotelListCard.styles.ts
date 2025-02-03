@@ -15,11 +15,7 @@ export const hotelListCardStyles = StyleSheet.create((theme, runtime) => {
     },
     thumbnail: {
       width: thumbnailWidth,
-      resizeMode: 'cover',
-    },
-    illustration: {
-      width: thumbnailWidth,
-      height: '100%',
+      height: 'auto',
     },
   };
 });

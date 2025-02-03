@@ -8,11 +8,7 @@ import {hotelGridCardStyles as styles} from './HotelGridCard.styles.ts';
 export function HotelGridCard(props: Nightly.Hotel) {
   return (
     <TouchableOpacity style={styles.wrapper}>
-      <Thumbnail
-        imageStyle={styles.thumbnail}
-        illustrationStyle={styles.thumbnail}
-        gallery={props.gallery}
-      />
+      <Thumbnail imageStyle={styles.thumbnail} gallery={props.gallery} />
       <ContentBody {...props} displayType={'card'} />
     </TouchableOpacity>
   );

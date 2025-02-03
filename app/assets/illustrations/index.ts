@@ -1,1 +1,1 @@
-export {default as IllustrationNightly} from './nightly.svg';
+export {default as IllustrationNightlyBG} from './nightly-bg.jpg';

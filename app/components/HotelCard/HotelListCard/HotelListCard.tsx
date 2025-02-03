@@ -8,11 +8,7 @@ import {hotelListCardStyles as styles} from './HotelListCard.styles.ts';
 export function HotelListCard(props: Nightly.Hotel) {
   return (
     <TouchableOpacity style={styles.wrapper}>
-      <Thumbnail
-        illustrationStyle={styles.illustration}
-        imageStyle={styles.thumbnail}
-        gallery={props.gallery}
-      />
+      <Thumbnail imageStyle={styles.thumbnail} gallery={props.gallery} />
       <ContentBody {...props} displayType={'list'} />
     </TouchableOpacity>
   );

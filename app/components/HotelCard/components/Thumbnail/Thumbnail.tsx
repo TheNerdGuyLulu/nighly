@@ -5,31 +5,21 @@ import {
   ImageProps,
   NativeSyntheticEvent,
 } from 'react-native';
-import {SvgProps} from 'react-native-svg';
 
-import {IllustrationNightly} from 'app/assets';
+import {IllustrationNightlyBG} from 'app/assets';
 
 type ThumbnailProps = Pick<Nightly.Hotel, 'gallery'> & {
   imageStyle: ImageProps['style'];
-  illustrationStyle: SvgProps['style'];
 };
 
-export function Thumbnail({
-  gallery,
-  illustrationStyle,
-  imageStyle,
-}: ThumbnailProps) {
+export function Thumbnail({gallery, imageStyle}: ThumbnailProps) {
   const [loadFailed, setLoadFailed] = useState<
     NativeSyntheticEvent<ImageErrorEventData> | undefined
   >(undefined);
 
   if (!gallery.length || loadFailed) {
-    return (
-      <IllustrationNightly
-        style={illustrationStyle}
-        preserveAspectRatio="xMidYMid slice"
-      />
-    );
+    // I could use an SVG here, but it's flickering a bit when changing between list and card display types
+    return <Image style={imageStyle} source={IllustrationNightlyBG} />;
   }
 
   return (
