@@ -14,9 +14,4 @@ export const ratingStyles = StyleSheet.create(theme => ({
     height: 15,
     color: '#9b5de5',
   },
-  ratingText: {
-    fontSize: 14,
-    fontWeight: '700',
-    fontFamily: 'MADE Tommy Soft',
-  },
 }));

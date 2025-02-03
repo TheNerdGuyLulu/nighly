@@ -9,6 +9,15 @@ const sharedTheme = {
     s20: 20,
     s32: 32,
   },
+  fontSizes: {
+    s12: 12,
+    s13: 13,
+    s14: 14,
+    s16: 16,
+  },
+  fontFamilies: {
+    MADETommySoft: 'MADE Tommy Soft',
+  },
 };
 
 const theme = {

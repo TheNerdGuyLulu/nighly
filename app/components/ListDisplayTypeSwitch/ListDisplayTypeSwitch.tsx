@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 
 import {IconList, IconRectangleGrid} from 'app/assets';
 
@@ -11,12 +11,12 @@ export function ListDisplayTypeSwitch({
   ...rest
 }: ListDisplayTypeSwitchProps) {
   return (
-    <Pressable {...rest}>
+    <TouchableOpacity {...rest}>
       {type === 'card' ? (
         <IconRectangleGrid style={styles.icon} />
       ) : (
         <IconList style={styles.icon} />
       )}
-    </Pressable>
+    </TouchableOpacity>
   );
 }

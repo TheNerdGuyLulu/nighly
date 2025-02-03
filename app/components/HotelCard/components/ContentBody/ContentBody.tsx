@@ -1,11 +1,12 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 
 import {priceWithCurrencySymbol} from 'app/utils';
 
 import {HotelQualityRating} from '../../../HotelQualityRating';
 import {ListDisplayType} from '../../../ListDisplayTypeSwitch';
 import {Rating} from '../../../Rating';
+import {Text} from '../../../Text';
 
 import {contentBodyStyles as styles} from './ContentBody.styles.ts';
 
@@ -32,19 +33,24 @@ export function ContentBody({
   return (
     <View style={styles.wrapper}>
       <View style={styles.titleWrapper}>
-        <Text style={styles.nameText}>{name}</Text>
+        <Text variant={'body2Black'} style={styles.nameText}>
+          {name}
+        </Text>
         <Rating userRating={userRating} />
       </View>
       <View style={styles.bodyWrapper}>
         <View style={styles.ratingLocationWrapper}>
           <HotelQualityRating stars={stars} />
-          <Text style={styles.locationText}>{location.city}</Text>
+          <Text variant={'body3'}>{location.city}</Text>
         </View>
         <View style={styles.pricingWrapper}>
-          <Text style={styles.priceText}>
+          <Text style={styles.priceText} variant={'body2Black'}>
             {priceWithCurrencySymbol({price, currency})}
           </Text>
-          <Text style={styles.durationText}> / night</Text>
+          <Text style={styles.durationText} variant={'Caption1'}>
+            {' '}
+            / night
+          </Text>
         </View>
       </View>
     </View>

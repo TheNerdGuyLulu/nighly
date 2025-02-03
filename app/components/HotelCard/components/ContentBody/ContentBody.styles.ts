@@ -12,9 +12,6 @@ export const contentBodyStyles = StyleSheet.create(theme => ({
   },
   nameText: {
     flex: 1,
-    fontSize: 16,
-    fontWeight: '500',
-    fontFamily: 'MADE Tommy Soft',
   },
   bodyWrapper: {
     variants: {
@@ -31,24 +28,15 @@ export const contentBodyStyles = StyleSheet.create(theme => ({
   ratingLocationWrapper: {
     rowGap: theme.sizes.s4,
   },
-  locationText: {
-    fontSize: 13,
-    fontFamily: 'MADE Tommy Soft',
-  },
   pricingWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
   priceText: {
-    fontSize: 16,
-    fontWeight: '700',
     color: '#003049',
-    fontFamily: 'MADE Tommy Soft',
   },
   durationText: {
-    fontSize: 12,
     color: '#434346',
-    fontFamily: 'MADE Tommy Soft',
   },
 }));
