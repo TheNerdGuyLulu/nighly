@@ -12,6 +12,20 @@
 		630FB1F748DA702EAB577D25 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CF2B28C2C3A048738F526024 /* MADE Tommy Soft Black Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 64E08A64A79C430B9AB84019 /* MADE Tommy Soft Black Outline.otf */; };
+		3490A0CEDF2040D58F662FEC /* MADE Tommy Soft Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 440A5CC8160848C383E7DED9 /* MADE Tommy Soft Black.otf */; };
+		104A47AFDF0347229F29F12B /* MADE Tommy Soft Bold Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = A32C00C77BCA424687D40A79 /* MADE Tommy Soft Bold Outline.otf */; };
+		0E33F9AEDDAC457EBC76F9C4 /* MADE Tommy Soft Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53089356937B4B4BB6DCA9C8 /* MADE Tommy Soft Bold.otf */; };
+		1F1A3CF6EA054F099DF5A588 /* MADE Tommy Soft ExtraBold Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE9D791E620F4E218F651197 /* MADE Tommy Soft ExtraBold Outline.otf */; };
+		0606035CFDFF41C182C798D0 /* MADE Tommy Soft ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F8F4C502050459882ADE756 /* MADE Tommy Soft ExtraBold.otf */; };
+		63E2F2FDFB1D4066840C0A81 /* MADE Tommy Soft Light Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DD9BF13E6445A922B8F96 /* MADE Tommy Soft Light Outline.otf */; };
+		5244F57C3A2046C08FF4EFA1 /* MADE Tommy Soft Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A66D7586A02E442EBDA757F4 /* MADE Tommy Soft Light.otf */; };
+		5DDE9AE213264224A62BBB93 /* MADE Tommy Soft Medium Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD059D06EBB490A9CE63409 /* MADE Tommy Soft Medium Outline.otf */; };
+		52A4E3F07878458995BD2644 /* MADE Tommy Soft Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1284B2C984C218FB0E913 /* MADE Tommy Soft Medium.otf */; };
+		90EE4D07FE894634A6AB8B91 /* MADE Tommy Soft Regular Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3ECA2C858C014C27885E6C82 /* MADE Tommy Soft Regular Outline.otf */; };
+		CB5BF3809C494ABE9865213A /* MADE Tommy Soft Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE315677CBB340DEAE096713 /* MADE Tommy Soft Regular.otf */; };
+		63466B2DA26642E9934AC89F /* MADE Tommy Soft Thin Outline.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6E791386C394D53A24A9B42 /* MADE Tommy Soft Thin Outline.otf */; };
+		BCCFB6B0867E4004A5EEDDA8 /* MADE Tommy Soft Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC93635794405E90F0F0C2 /* MADE Tommy Soft Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +39,20 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = nightly/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = nightly/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		64E08A64A79C430B9AB84019 /* MADE Tommy Soft Black Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Black Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Black Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		440A5CC8160848C383E7DED9 /* MADE Tommy Soft Black.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Black.otf"; path = "../app/assets/fonts/MADE Tommy Soft Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A32C00C77BCA424687D40A79 /* MADE Tommy Soft Bold Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Bold Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Bold Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53089356937B4B4BB6DCA9C8 /* MADE Tommy Soft Bold.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Bold.otf"; path = "../app/assets/fonts/MADE Tommy Soft Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE9D791E620F4E218F651197 /* MADE Tommy Soft ExtraBold Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft ExtraBold Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft ExtraBold Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F8F4C502050459882ADE756 /* MADE Tommy Soft ExtraBold.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft ExtraBold.otf"; path = "../app/assets/fonts/MADE Tommy Soft ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F1DD9BF13E6445A922B8F96 /* MADE Tommy Soft Light Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Light Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Light Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A66D7586A02E442EBDA757F4 /* MADE Tommy Soft Light.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Light.otf"; path = "../app/assets/fonts/MADE Tommy Soft Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FAD059D06EBB490A9CE63409 /* MADE Tommy Soft Medium Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Medium Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Medium Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4AE1284B2C984C218FB0E913 /* MADE Tommy Soft Medium.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Medium.otf"; path = "../app/assets/fonts/MADE Tommy Soft Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3ECA2C858C014C27885E6C82 /* MADE Tommy Soft Regular Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Regular Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Regular Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE315677CBB340DEAE096713 /* MADE Tommy Soft Regular.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Regular.otf"; path = "../app/assets/fonts/MADE Tommy Soft Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B6E791386C394D53A24A9B42 /* MADE Tommy Soft Thin Outline.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Thin Outline.otf"; path = "../app/assets/fonts/MADE Tommy Soft Thin Outline.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5AAC93635794405E90F0F0C2 /* MADE Tommy Soft Thin.otf */ = {isa = PBXFileReference; name = "MADE Tommy Soft Thin.otf"; path = "../app/assets/fonts/MADE Tommy Soft Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +103,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				0F19D53DA1664DE2A46B8CB7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -97,6 +126,28 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		0F19D53DA1664DE2A46B8CB7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				64E08A64A79C430B9AB84019 /* MADE Tommy Soft Black Outline.otf */,
+				440A5CC8160848C383E7DED9 /* MADE Tommy Soft Black.otf */,
+				A32C00C77BCA424687D40A79 /* MADE Tommy Soft Bold Outline.otf */,
+				53089356937B4B4BB6DCA9C8 /* MADE Tommy Soft Bold.otf */,
+				AE9D791E620F4E218F651197 /* MADE Tommy Soft ExtraBold Outline.otf */,
+				4F8F4C502050459882ADE756 /* MADE Tommy Soft ExtraBold.otf */,
+				8F1DD9BF13E6445A922B8F96 /* MADE Tommy Soft Light Outline.otf */,
+				A66D7586A02E442EBDA757F4 /* MADE Tommy Soft Light.otf */,
+				FAD059D06EBB490A9CE63409 /* MADE Tommy Soft Medium Outline.otf */,
+				4AE1284B2C984C218FB0E913 /* MADE Tommy Soft Medium.otf */,
+				3ECA2C858C014C27885E6C82 /* MADE Tommy Soft Regular Outline.otf */,
+				DE315677CBB340DEAE096713 /* MADE Tommy Soft Regular.otf */,
+				B6E791386C394D53A24A9B42 /* MADE Tommy Soft Thin Outline.otf */,
+				5AAC93635794405E90F0F0C2 /* MADE Tommy Soft Thin.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -161,6 +212,20 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				630FB1F748DA702EAB577D25 /* PrivacyInfo.xcprivacy in Resources */,
+				CF2B28C2C3A048738F526024 /* MADE Tommy Soft Black Outline.otf in Resources */,
+				3490A0CEDF2040D58F662FEC /* MADE Tommy Soft Black.otf in Resources */,
+				104A47AFDF0347229F29F12B /* MADE Tommy Soft Bold Outline.otf in Resources */,
+				0E33F9AEDDAC457EBC76F9C4 /* MADE Tommy Soft Bold.otf in Resources */,
+				1F1A3CF6EA054F099DF5A588 /* MADE Tommy Soft ExtraBold Outline.otf in Resources */,
+				0606035CFDFF41C182C798D0 /* MADE Tommy Soft ExtraBold.otf in Resources */,
+				63E2F2FDFB1D4066840C0A81 /* MADE Tommy Soft Light Outline.otf in Resources */,
+				5244F57C3A2046C08FF4EFA1 /* MADE Tommy Soft Light.otf in Resources */,
+				5DDE9AE213264224A62BBB93 /* MADE Tommy Soft Medium Outline.otf in Resources */,
+				52A4E3F07878458995BD2644 /* MADE Tommy Soft Medium.otf in Resources */,
+				90EE4D07FE894634A6AB8B91 /* MADE Tommy Soft Regular Outline.otf in Resources */,
+				CB5BF3809C494ABE9865213A /* MADE Tommy Soft Regular.otf in Resources */,
+				63466B2DA26642E9934AC89F /* MADE Tommy Soft Thin Outline.otf in Resources */,
+				BCCFB6B0867E4004A5EEDDA8 /* MADE Tommy Soft Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

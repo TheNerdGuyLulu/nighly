@@ -48,5 +48,22 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MADE Tommy Soft Black Outline.otf</string>
+		<string>MADE Tommy Soft Black.otf</string>
+		<string>MADE Tommy Soft Bold Outline.otf</string>
+		<string>MADE Tommy Soft Bold.otf</string>
+		<string>MADE Tommy Soft ExtraBold Outline.otf</string>
+		<string>MADE Tommy Soft ExtraBold.otf</string>
+		<string>MADE Tommy Soft Light Outline.otf</string>
+		<string>MADE Tommy Soft Light.otf</string>
+		<string>MADE Tommy Soft Medium Outline.otf</string>
+		<string>MADE Tommy Soft Medium.otf</string>
+		<string>MADE Tommy Soft Regular Outline.otf</string>
+		<string>MADE Tommy Soft Regular.otf</string>
+		<string>MADE Tommy Soft Thin Outline.otf</string>
+		<string>MADE Tommy Soft Thin.otf</string>
+	</array>
 </dict>
 </plist>

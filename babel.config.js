@@ -18,5 +18,6 @@ module.exports = {
       },
     ],
     ['react-native-unistyles/plugin'],
+    'react-native-reanimated/plugin',
   ],
 };

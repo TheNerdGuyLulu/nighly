@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Black Outline.otf",
+      "sha1": "8cafe4c25c4cbf9e41cca60f14b1f29c0f90e1f5"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Black.otf",
+      "sha1": "fcd84ac1f42e62d7c1dc15b1b5202d1809bf2dbc"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Bold Outline.otf",
+      "sha1": "5000e6d7cd5c9ca0c902f540ce790ea184395cdc"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Bold.otf",
+      "sha1": "f755e2583540f74dc81dc9f375b96490491464a1"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft ExtraBold Outline.otf",
+      "sha1": "33728ef2def7e922efc7b21f3dfb0a32a84d66b2"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft ExtraBold.otf",
+      "sha1": "f4deade6aa17a9b77ffeecc4a21e6fa45aad8d6b"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Light Outline.otf",
+      "sha1": "204f13268737082def263c7d64bde4126c457041"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Light.otf",
+      "sha1": "084939f899856552e9535c09526e70a21d01ed51"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Medium Outline.otf",
+      "sha1": "1a92ed22254c8655ef9610a13dc2e6e96a4ca122"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Medium.otf",
+      "sha1": "90bce931f5647037e05b7b827d8d0ab59b5e6564"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Regular Outline.otf",
+      "sha1": "f16158a151230011b2615d34e06d7f26a92b648f"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Regular.otf",
+      "sha1": "0af0656522831c6a697894a6e802730c927af942"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Thin Outline.otf",
+      "sha1": "7681a121beb76b52268d3ce50aa39d99682cd92d"
+    },
+    {
+      "path": "app/assets/fonts/MADE Tommy Soft Thin.otf",
+      "sha1": "6ad10718dc2a30589a4f22da0f9caf6362544701"
+    }
+  ]
+}
