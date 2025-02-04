@@ -1,6 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View } from 'react-native';
-import { TouchableProps } from 'react-native-svg';
+import { TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
 
 import { IconArrowUpDown } from 'app/assets';
 
@@ -10,7 +9,7 @@ import { sortByStyles as styles } from './SortBy.styles.ts';
 
 type SortByProps = {
   sortBy: string;
-} & TouchableProps;
+} & TouchableOpacityProps;
 
 export function SortBy({ sortBy, style, ...rest }: SortByProps) {
   return (

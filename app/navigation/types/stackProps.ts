@@ -4,7 +4,6 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import {
   BottomTabNavigatorParamList,
-  HomeNavigatorParamList,
   RootNavigatorParamList,
 } from './paramLists';
 
@@ -17,9 +16,3 @@ export type BottomTabNavigatorScreenProps<
   BottomTabScreenProps<BottomTabNavigatorParamList, T>,
   RootNavigatorScreenProps<any>
 >;
-
-export type HomeNavigatorScreenProps<T extends keyof HomeNavigatorParamList> =
-  CompositeScreenProps<
-    NativeStackScreenProps<HomeNavigatorParamList, T>,
-    BottomTabNavigatorScreenProps<any>
-  >;
