@@ -1,16 +1,21 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Text } from '../Text';
+import { Text, TextVariants } from '../Text';
 
 import { ratingStyles as styles } from './Rating.styles.ts';
 
-type RatingProps = Pick<Nightly.Hotel, 'userRating'>;
+type RatingProps = Pick<Nightly.Hotel, 'userRating'> & {
+  size?: 'normal' | 'large';
+};
 
-export function Rating({ userRating }: RatingProps) {
+export function Rating({ userRating, size = 'normal' }: RatingProps) {
+  const variant: TextVariants =
+    size === 'normal' ? 'body2Black' : 'body1Medium';
+
   return (
     <View style={styles.ratingWrapper}>
-      <Text variant={'body2Black'}>{userRating}</Text>
+      <Text variant={variant}>{userRating}</Text>
     </View>
   );
 }

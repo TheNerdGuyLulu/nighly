@@ -1,11 +1,11 @@
 import React from 'react';
+import { View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { Home } from 'app/modules';
 
-import { BottomTabNavigatorScreenNames, NavigatorNames } from '../../constants';
+import { BottomTabNavigatorScreenNames } from '../../constants';
 import { BottomTabNavigatorParamList } from '../../types/paramLists.ts';
-import { HomeNavigator } from '../HomeNavigator';
 
 const Tab = createBottomTabNavigator<BottomTabNavigatorParamList>();
 
@@ -18,13 +18,10 @@ export function BottomTabNavigator() {
           backgroundColor: 'white',
         },
       }}>
-      <Tab.Screen
-        name={NavigatorNames.HomeNavigator}
-        component={HomeNavigator}
-      />
+      <Tab.Screen name={BottomTabNavigatorScreenNames.Home} component={Home} />
       <Tab.Screen
         name={BottomTabNavigatorScreenNames.Favorites}
-        component={Home}
+        component={View}
       />
     </Tab.Navigator>
   );

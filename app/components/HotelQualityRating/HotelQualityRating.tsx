@@ -7,9 +7,17 @@ import { hotelQualityRatingStyles as styles } from './HotelQualityRating.styles.
 
 type HotelQualityRatingProps = {
   stars: number;
+  size?: 'normal' | 'large';
 };
 
-export function HotelQualityRating({ stars }: HotelQualityRatingProps) {
+export function HotelQualityRating({
+  stars,
+  size = 'normal',
+}: HotelQualityRatingProps) {
+  styles.useVariants({
+    size,
+  });
+
   return (
     <View style={styles.wrapper}>
       {Array.from({ length: stars }, (_, i) => (

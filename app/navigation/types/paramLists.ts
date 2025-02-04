@@ -2,22 +2,18 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 
 import {
   BottomTabNavigatorScreenNames,
-  HomeNavigatorScreenNames,
   NavigatorNames,
+  RootNavigatorScreenNames,
 } from '../constants';
 
 export type RootNavigatorParamList = {
   [NavigatorNames.BottomTabNavigator]: NavigatorScreenParams<BottomTabNavigatorParamList>;
+  [RootNavigatorScreenNames.Hotel]: {
+    hotel: Nightly.Hotel;
+  };
 };
 
 export type BottomTabNavigatorParamList = {
-  [NavigatorNames.HomeNavigator]: NavigatorScreenParams<HomeNavigatorParamList>;
-  [BottomTabNavigatorScreenNames.Favorites]: {};
-};
-
-export type HomeNavigatorParamList = {
-  [HomeNavigatorScreenNames.Home]: undefined;
-  [HomeNavigatorScreenNames.Hotel]: {
-    hotel: Nightly.Hotel;
-  };
+  [BottomTabNavigatorScreenNames.Home]: undefined;
+  [BottomTabNavigatorScreenNames.Favorites]: undefined;
 };
