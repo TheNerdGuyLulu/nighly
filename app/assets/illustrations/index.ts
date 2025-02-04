@@ -1,1 +1,1 @@
-export {default as IllustrationNightlyBG} from './nightly-bg.jpg';
+export { default as IllustrationNightlyBG } from './nightly-bg.jpg';
