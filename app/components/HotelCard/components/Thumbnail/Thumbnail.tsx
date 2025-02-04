@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Image,
   ImageErrorEventData,
@@ -6,13 +6,13 @@ import {
   NativeSyntheticEvent,
 } from 'react-native';
 
-import {IllustrationNightlyBG} from 'app/assets';
+import { IllustrationNightlyBG } from 'app/assets';
 
 type ThumbnailProps = Pick<Nightly.Hotel, 'gallery'> & {
   imageStyle: ImageProps['style'];
 };
 
-export function Thumbnail({gallery, imageStyle}: ThumbnailProps) {
+export function Thumbnail({ gallery, imageStyle }: ThumbnailProps) {
   const [loadFailed, setLoadFailed] = useState<
     NativeSyntheticEvent<ImageErrorEventData> | undefined
   >(undefined);
@@ -26,7 +26,7 @@ export function Thumbnail({gallery, imageStyle}: ThumbnailProps) {
     <Image
       onError={setLoadFailed}
       style={imageStyle}
-      source={{uri: gallery[0]}}
+      source={{ uri: gallery[0] }}
     />
   );
 }

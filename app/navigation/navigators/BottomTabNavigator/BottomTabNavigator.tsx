@@ -1,11 +1,11 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {Home} from 'app/modules';
+import { Home } from 'app/modules';
 
-import {BottomTabNavigatorScreenNames, NavigatorNames} from '../../constants';
-import {BottomTabNavigatorParamList} from '../../types/paramLists.ts';
-import {HomeNavigator} from '../HomeNavigator';
+import { BottomTabNavigatorScreenNames, NavigatorNames } from '../../constants';
+import { BottomTabNavigatorParamList } from '../../types/paramLists.ts';
+import { HomeNavigator } from '../HomeNavigator';
 
 const Tab = createBottomTabNavigator<BottomTabNavigatorParamList>();
 

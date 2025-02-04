@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native-unistyles';
+import { StyleSheet } from 'react-native-unistyles';
 
 export const textStyles = StyleSheet.create(theme => ({
   text: {

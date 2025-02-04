@@ -1,14 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 
-import {priceWithCurrencySymbol} from 'app/utils';
+import { priceWithCurrencySymbol } from 'app/utils';
 
-import {HotelQualityRating} from '../../../HotelQualityRating';
-import {ListDisplayType} from '../../../ListDisplayTypeSwitch';
-import {Rating} from '../../../Rating';
-import {Text} from '../../../Text';
+import { HotelQualityRating } from '../../../HotelQualityRating';
+import { ListDisplayType } from '../../../ListDisplayTypeSwitch';
+import { Rating } from '../../../Rating';
+import { Text } from '../../../Text';
 
-import {contentBodyStyles as styles} from './ContentBody.styles.ts';
+import { contentBodyStyles as styles } from './ContentBody.styles.ts';
 
 type ContentBodyProps = Pick<
   Nightly.Hotel,
@@ -45,7 +45,7 @@ export function ContentBody({
         </View>
         <View style={styles.pricingWrapper}>
           <Text style={styles.priceText} variant={'body2Black'}>
-            {priceWithCurrencySymbol({price, currency})}
+            {priceWithCurrencySymbol({ price, currency })}
           </Text>
           <Text style={styles.durationText} variant={'Caption1'}>
             {' '}

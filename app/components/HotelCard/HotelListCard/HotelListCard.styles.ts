@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native-unistyles';
+import { StyleSheet } from 'react-native-unistyles';
 
 export const hotelListCardStyles = StyleSheet.create((theme, runtime) => {
   const thumbnailWidth = runtime.screen.width / 3.5;

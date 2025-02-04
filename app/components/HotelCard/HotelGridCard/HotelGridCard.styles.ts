@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native-unistyles';
+import { StyleSheet } from 'react-native-unistyles';
 
 export const hotelGridCardStyles = StyleSheet.create((theme, runtime) => {
   const imageHeight = runtime.screen.height / 5;

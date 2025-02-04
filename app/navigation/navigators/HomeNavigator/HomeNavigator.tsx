@@ -1,10 +1,10 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {Home, Hotel} from 'app/modules';
+import { Home, Hotel } from 'app/modules';
 
-import {HomeNavigatorScreenNames} from '../../constants';
-import {HomeNavigatorParamList} from '../../types/paramLists.ts';
+import { HomeNavigatorScreenNames } from '../../constants';
+import { HomeNavigatorParamList } from '../../types/paramLists.ts';
 
 const Stack = createNativeStackNavigator<HomeNavigatorParamList>();
 

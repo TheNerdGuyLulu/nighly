@@ -1,9 +1,9 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 
-import {ListDisplayType, ListDisplayTypeSwitch, SortBy} from 'app/components';
+import { ListDisplayType, ListDisplayTypeSwitch, SortBy } from 'app/components';
 
-import {listHeaderStyles as styles} from './ListHeader.styles.ts';
+import { listHeaderStyles as styles } from './ListHeader.styles.ts';
 
 type ListHeaderProps = {
   listDisplayType: ListDisplayType;

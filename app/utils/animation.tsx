@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Animated, {AnimatedProps} from 'react-native-reanimated';
+import Animated, { AnimatedProps } from 'react-native-reanimated';
 
 export function createAnimatedComponent<P extends object>(
   FunctionalComponent: React.FunctionComponent<P>,

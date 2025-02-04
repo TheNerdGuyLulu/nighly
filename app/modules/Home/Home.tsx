@@ -1,23 +1,23 @@
-import React, {useCallback, useMemo} from 'react';
-import {FlatList, ListRenderItemInfo, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import React, { useCallback, useMemo } from 'react';
+import { FlatList, ListRenderItemInfo, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import {HotelGridCard, HotelListCard} from 'app/components';
-import {HomeNavigatorScreenProps} from 'app/navigation';
-import {HomeNavigatorScreenNames} from 'app/navigation/constants';
+import { HotelGridCard, HotelListCard } from 'app/components';
+import { HomeNavigatorScreenProps } from 'app/navigation';
+import { HomeNavigatorScreenNames } from 'app/navigation/constants';
 
-import {ListHeader} from './components';
-import {homeStyles as styles} from './Home.styles.ts';
-import {useApi, useListDisplayType} from './hooks';
+import { ListHeader } from './components';
+import { homeStyles as styles } from './Home.styles.ts';
+import { useApi, useListDisplayType } from './hooks';
 
 const ItemSeparatorComponent = () => <View style={styles.itemSeparator} />;
 
 type HomeProps = HomeNavigatorScreenProps<HomeNavigatorScreenNames.Home>;
 
-export function Home({navigation}: HomeProps) {
-  const {listDisplayType, onToggleListDisplayType} = useListDisplayType();
+export function Home({ navigation }: HomeProps) {
+  const { listDisplayType, onToggleListDisplayType } = useListDisplayType();
 
-  const {data, sortBy} = useApi();
+  const { data, sortBy } = useApi();
 
   const ListHeaderComponent = useMemo(() => {
     return (
@@ -39,7 +39,7 @@ export function Home({navigation}: HomeProps) {
   );
 
   const renderItem = useCallback(
-    ({item}: ListRenderItemInfo<Nightly.Hotel>) => {
+    ({ item }: ListRenderItemInfo<Nightly.Hotel>) => {
       if (listDisplayType === 'list') {
         return <HotelListCard onPress={onPress(item)} hotel={item} />;
       }

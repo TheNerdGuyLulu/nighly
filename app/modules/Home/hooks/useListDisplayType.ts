@@ -1,6 +1,6 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
-import {ListDisplayType} from 'app/components';
+import { ListDisplayType } from 'app/components';
 
 export function useListDisplayType() {
   const [listDisplayType, setListDisplayType] =
@@ -9,5 +9,5 @@ export function useListDisplayType() {
   const onToggleListDisplayType = () =>
     setListDisplayType(prev => (prev === 'list' ? 'card' : 'list'));
 
-  return {listDisplayType, onToggleListDisplayType};
+  return { listDisplayType, onToggleListDisplayType };
 }

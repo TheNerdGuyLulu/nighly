@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native-unistyles';
+import { StyleSheet } from 'react-native-unistyles';
 
 export const thumbnailStyles = StyleSheet.create((theme, runtime) => ({
   illustration: {

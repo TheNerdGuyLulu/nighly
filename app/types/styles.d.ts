@@ -1,4 +1,4 @@
-import {appTheme} from 'app/theme/theme.ts';
+import { appTheme } from 'app/theme/theme.ts';
 
 type AppThemes = typeof appTheme;
 

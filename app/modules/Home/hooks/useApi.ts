@@ -1,6 +1,6 @@
-import {useEffect, useMemo, useState} from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
-import {ENV} from 'app/constants';
+import { ENV } from 'app/constants';
 
 const getData = async () => {
   const data = await fetch(ENV.api);
@@ -28,5 +28,5 @@ export function useApi() {
     getData().then(setData);
   }, []);
 
-  return {data: sortedData, sortBy};
+  return { data: sortedData, sortBy };
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
-import {IconList, IconRectangleGrid} from 'app/assets';
+import { IconList, IconRectangleGrid } from 'app/assets';
 
-import {listDisplayTypeSwitchStyles as styles} from './ListDisplayTypeSwitch.styles.ts';
-import {ListDisplayTypeSwitchProps} from './ListDisplayTypeSwitch.types';
+import { listDisplayTypeSwitchStyles as styles } from './ListDisplayTypeSwitch.styles.ts';
+import { ListDisplayTypeSwitchProps } from './ListDisplayTypeSwitch.types';
 
 export function ListDisplayTypeSwitch({
   type,
