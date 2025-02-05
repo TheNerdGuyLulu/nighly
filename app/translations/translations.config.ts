@@ -4,16 +4,18 @@ import i18next, { LanguageDetectorModule } from 'i18next';
 import en from './resources/en.json';
 import pt from './resources/pt.json';
 
+export const defaultNS = 'translation';
+
 export const resources = {
   en: {
-    translation: en,
+    [defaultNS]: en,
   },
   pt: {
-    translation: pt,
+    [defaultNS]: pt,
   },
 } as const;
 
-const fallbackLng = Object.keys(resources)[0];
+const fallbackLng = Object.keys(resources)[1];
 
 const languageDetector: LanguageDetectorModule = {
   type: 'languageDetector',

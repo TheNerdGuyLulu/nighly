@@ -1,9 +1,8 @@
-import { resources } from 'src/translations/translations.config';
+import { defaultNS, resources } from 'app/translations/translations.config';
 
 declare module 'i18next' {
   interface CustomTypeOptions {
-    jsonFormat: 'v3';
     resources: (typeof resources)['en'];
-    returnNull: false;
+    defaultNS: typeof defaultNS;
   }
 }

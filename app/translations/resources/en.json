@@ -1,1 +1,40 @@
-{}
+{
+  "hotel": {
+    "detailsSection": {
+      "detailsTitle": "Details",
+      "description": "{{name}} is a luxurious hotel that offers a perfect blend of comfort and style. Located in the heart of {{city}}, it provides an ideal retreat for both business and leisure travelers. With exceptional service, modern amenities, and a range of room options, {{name}} ensures every guest has a memorable stay... ",
+      "fullDescription": "{{name}} is a luxurious hotel that offers a perfect blend of comfort and style, making it a top choice for travelers seeking both relaxation and convenience. Located in the heart of {{city}}, this stunning property boasts a prime location just minutes away from museums and shopping districts. Whether you’re visiting for business, leisure, or a bit of both, {{name}} provides an idyllic retreat where every detail is designed to exceed expectations.\n\nThe hotel combines modern sophistication with warm hospitality, offering an array of amenities that cater to the needs of all guests. From spacious, elegantly appointed rooms and suites to world-class dining options, you’ll find everything you need to feel right at home. The property features state-of-the-art facilities including a spa, gym and pool, ensuring that relaxation and rejuvenation are always within reach. For business travelers, {{name}} is equipped with a range of meeting rooms and event spaces, ideal for conferences, seminars, and private gatherings.\n\nThe hotel’s attentive concierge team is always available to assist with bookings, transport arrangements, and recommendations, ensuring your stay is both efficient and enjoyable. Leisure guests will appreciate the proximity to top attractions, vibrant shopping streets, and gourmet restaurants, while still enjoying a peaceful retreat within the hotel’s serene environment. Whether you’re unwinding at the hotel’s spa, enjoying a meal at the signature restaurant, or lounging by the pool with a cocktail in hand, {{name}} offers an unmatched experience of luxury and convenience. Each room at {{name}} is thoughtfully designed to cater to the modern traveler.\n\nFeaturing a variety of room types, from intimate rooms perfect for solo travelers to expansive suites ideal for families and groups, every space is a sanctuary of comfort. Guests can enjoy high-end amenities such as premium linens, high-speed internet, and personalized room service, ensuring a restful and productive stay. With a commitment to impeccable service and an unforgettable experience, {{name}} guarantees that every guest will leave with fond memories and the desire to return. Whether you’re here for a short getaway or an extended stay, your time at {{name}} will undoubtedly be a highlight of your journey in {{city}}.",
+      "readMore": "Read more"
+    },
+    "informationSection": {
+      "informationTitle": "Information",
+      "checkIn": "Check-in:",
+      "fromTo": "{{from}} - {{to}}",
+      "checkOut": "Check-out:",
+      "address": "Address:"
+    },
+    "contactsSection": {
+      "contactsTitle": "Contacts",
+      "phoneNumber": "Phone:",
+      "email": "Email:"
+    },
+    "featuresSection": {
+      "featuresTitle": "Features",
+      "freeWifi": "Free wifi",
+      "freeBreakfast": "Free breakfast",
+      "animalFriendly": "Animal friendly",
+      "24HourFrontDesk": "24-hour front desk",
+      "disabledGuestsFriendly": "Disabled guests friendly",
+      "privateParking": "Private parking",
+      "indoorPool": "Indoor pool",
+      "teaCoffeeMakerInAllRooms": "Tea/Coffee maker in all rooms",
+      "fitnessCenter": "Fitness center",
+      "roomService": "Room service",
+      "airConditioned": "Air-conditioned"
+    },
+    "pricing": {
+      "perNight": " /night",
+      "reserveARoom": "Reserve a room"
+    }
+  }
+}
