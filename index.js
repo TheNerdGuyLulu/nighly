@@ -1,3 +1,4 @@
+import 'app/translations/translations.config';
 import 'app/theme/theme.config.ts';
 
 import { AppRegistry } from 'react-native';
