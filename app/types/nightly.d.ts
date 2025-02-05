@@ -11,10 +11,12 @@ declare namespace Nightly {
     to: string;
   };
 
-  type Contacts = {
+  type Contact = {
     phoneNumber: string;
     email: string;
   };
+
+  type Contacts = keyof Nightly.Contact;
 
   // Currency could also be defined as "string".
   // However, there are only a limited number of currencies,
@@ -28,7 +30,7 @@ declare namespace Nightly {
     stars: number;
     checkIn: CheckInOutTime;
     checkOut: CheckInOutTime;
-    contact: Contacts;
+    contact: Contact;
     gallery: string[];
     userRating: number;
     price: number;
