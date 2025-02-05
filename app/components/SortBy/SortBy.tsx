@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
+import { useUnistyles } from 'react-native-unistyles';
 
 import { IconArrowUpDown } from 'app/assets';
 
@@ -12,10 +13,12 @@ type SortByProps = {
 } & TouchableOpacityProps;
 
 export function SortBy({ sortBy, style, ...rest }: SortByProps) {
+  const { theme } = useUnistyles();
+
   return (
     <TouchableOpacity {...rest} style={style}>
       <View style={styles.sortWrapper}>
-        <IconArrowUpDown style={styles.sortIcon} />
+        <IconArrowUpDown color={theme.colors.text1} style={styles.sortIcon} />
         <Text
           variant={'body3'}
           style={{

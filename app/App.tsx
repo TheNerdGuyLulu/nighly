@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import BootSplash from 'react-native-bootsplash';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NavigationContainer } from '@react-navigation/native';
+import { useUnistyles } from 'react-native-unistyles';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 
 import { RootNavigator } from './navigation';
 
@@ -11,10 +12,24 @@ const onNavigationReady = () => {
 };
 
 export default function App() {
+  const { theme } = useUnistyles();
+
+  const navTheme = useMemo(
+    () => ({
+      ...DefaultTheme,
+      colors: {
+        ...DefaultTheme.colors,
+        background: theme.colors.background1,
+        card: theme.colors.background1,
+      },
+    }),
+    [theme.colors.background1],
+  );
+
   return (
     <GestureHandlerRootView>
       <SafeAreaProvider>
-        <NavigationContainer onReady={onNavigationReady}>
+        <NavigationContainer theme={navTheme} onReady={onNavigationReady}>
           <RootNavigator />
         </NavigationContainer>
       </SafeAreaProvider>

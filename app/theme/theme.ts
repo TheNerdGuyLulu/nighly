@@ -24,23 +24,48 @@ const sharedTheme = {
   },
 };
 
-const theme = {
+const light = {
   colors: {
-    Primary: '#4C4DDC',
-    DarkBlue1: '#0081a7',
+    primary: '#4C4DDC',
+    darkBlue1: '#0081a7',
+
+    border1: '#eee',
+
+    text1: '#000',
+    text2: '#434346',
+
+    icon1: '#1a1818',
+
+    background1: '#fff',
+    background2: '#fbfdff',
+    background3: '#e5e5e5',
+    background4: '#c8c8f4',
+    background5: '#eae8e8',
   },
   ...sharedTheme,
 };
 
-const darkTheme = {
+const dark = {
   colors: {
-    Primary: '#4C4DDC',
-    DarkBlue1: '#0081a7',
+    primary: '#4C4DDC',
+    darkBlue1: '#0081a7',
+
+    border1: 'transparent',
+
+    text1: '#fff',
+    text2: '#ddc9c9',
+
+    icon1: '#e3e3e3',
+
+    background1: '#001524',
+    background2: '#00385f',
+    background3: '#074671',
+    background4: '#eeeefb',
   },
   ...sharedTheme,
 };
 
 export const appTheme = {
-  lightTheme: theme,
-  darkTheme,
+  light,
+  dark,
 };

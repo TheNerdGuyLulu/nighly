@@ -9,9 +9,9 @@ export const hotelListCardStyles = StyleSheet.create((theme, runtime) => {
       minHeight: 120,
       borderRadius: theme.sizes.s8,
       overflow: 'hidden',
-      borderWidth: 0.5,
-      borderColor: '#eee',
-      backgroundColor: '#fbfdff',
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: theme.colors.border1,
+      backgroundColor: theme.colors.background2,
     },
     thumbnail: {
       width: thumbnailWidth,

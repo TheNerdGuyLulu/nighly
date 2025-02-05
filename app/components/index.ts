@@ -7,4 +7,5 @@ export * from './Rating';
 export * from './ScreenWrapper';
 export * from './SortBy';
 export * from './Tag';
+export * from './Thumbnail';
 export * from './Text';

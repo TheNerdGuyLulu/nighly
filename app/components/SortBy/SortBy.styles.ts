@@ -9,6 +9,5 @@ export const sortByStyles = StyleSheet.create(theme => ({
   sortIcon: {
     width: theme.sizes.s16,
     height: theme.sizes.s16,
-    color: '#b998dd',
   },
 }));

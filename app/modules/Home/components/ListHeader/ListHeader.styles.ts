@@ -10,7 +10,7 @@ export const listHeaderStyles = StyleSheet.create(theme => ({
   sortDisplayItemWrapper: {
     padding: theme.sizes.s6,
     borderRadius: theme.sizes.s6,
-    backgroundColor: '#e5e5e5',
+    backgroundColor: theme.colors.background3,
     minHeight: theme.sizes.s32,
     justifyContent: 'center',
   },

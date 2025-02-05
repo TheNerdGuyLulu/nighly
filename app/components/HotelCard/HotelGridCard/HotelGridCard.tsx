@@ -6,10 +6,10 @@ import { HotelCardProps } from '../HotelCard.types.ts';
 
 import { hotelGridCardStyles as styles } from './HotelGridCard.styles.ts';
 
-export function HotelGridCard({ hotel, onPress }: HotelCardProps) {
+export function HotelGridCard({ hotel, onPress }: Readonly<HotelCardProps>) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.wrapper}>
-      <Thumbnail imageStyle={styles.thumbnail} gallery={hotel.gallery} />
+      <Thumbnail imageStyle={styles.thumbnail} source={hotel.gallery[0]} />
       <ContentBody {...hotel} displayType={'card'} />
     </TouchableOpacity>
   );

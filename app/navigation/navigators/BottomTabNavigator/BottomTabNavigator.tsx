@@ -14,9 +14,6 @@ export function BottomTabNavigator() {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        sceneStyle: {
-          backgroundColor: 'white',
-        },
       }}>
       <Tab.Screen name={BottomTabNavigatorScreenNames.Home} component={Home} />
       <Tab.Screen

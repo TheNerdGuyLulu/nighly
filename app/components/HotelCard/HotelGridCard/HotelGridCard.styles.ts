@@ -6,10 +6,10 @@ export const hotelGridCardStyles = StyleSheet.create((theme, runtime) => {
   return {
     wrapper: {
       borderRadius: theme.sizes.s8,
-      borderWidth: 0.5,
-      borderColor: '#eee',
+      borderWidth: StyleSheet.hairlineWidth,
+      borderColor: theme.colors.border1,
       overflow: 'hidden',
-      backgroundColor: '#fbfdff',
+      backgroundColor: theme.colors.background2,
     },
     thumbnail: {
       width: '100%',

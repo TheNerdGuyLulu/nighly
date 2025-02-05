@@ -1,2 +1,2 @@
 export * from './ContentBody';
-export * from './Thumbnail';
+export * from '../../Thumbnail';

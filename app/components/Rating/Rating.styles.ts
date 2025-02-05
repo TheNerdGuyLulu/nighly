@@ -6,7 +6,7 @@ export const ratingStyles = StyleSheet.create(theme => ({
     alignSelf: 'flex-start',
     alignItems: 'center',
     columnGap: theme.sizes.s8,
-    backgroundColor: '#eae8e8',
+    backgroundColor: theme.colors.background3,
     padding: theme.sizes.s4,
     borderRadius: theme.sizes.s4,
   },
