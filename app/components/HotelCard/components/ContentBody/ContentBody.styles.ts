@@ -33,7 +33,6 @@ export const contentBodyStyles = StyleSheet.create(theme => ({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  priceText: {},
   durationText: {
     color: theme.colors.text2,
   },

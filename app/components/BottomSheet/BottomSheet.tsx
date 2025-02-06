@@ -14,8 +14,9 @@ function renderBackdrop(props: BottomSheetBackdropProps) {
     <BottomSheetBackdrop {...props} disappearsOnIndex={-1} appearsOnIndex={0} />
   );
 }
+
 function BottomSheetBase(
-  props: BottomSheetProps,
+  props: Readonly<BottomSheetProps>,
   ref: ForwardedRef<BottomSheetModal>,
 ) {
   const { height } = useWindowDimensions();

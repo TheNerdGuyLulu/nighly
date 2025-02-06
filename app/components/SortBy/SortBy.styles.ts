@@ -18,6 +18,6 @@ export const sortByStyles = StyleSheet.create(theme => ({
     height: theme.sizes.s16,
   },
   text: {
-    color: '#313131',
+    color: theme.colors.text3,
   },
 }));

@@ -9,7 +9,7 @@ type RatingProps = Pick<Nightly.Hotel, 'userRating'> & {
   size?: 'normal' | 'large';
 };
 
-export function Rating({ userRating, size = 'normal' }: RatingProps) {
+export function Rating({ userRating, size = 'normal' }: Readonly<RatingProps>) {
   const variant: TextVariants =
     size === 'normal' ? 'body2Black' : 'body1Medium';
 

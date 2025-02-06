@@ -10,7 +10,7 @@ import { ListDisplayTypeSwitchProps } from './ListDisplayTypeSwitch.types.ts';
 export function ListDisplayTypeSwitch({
   type,
   ...rest
-}: ListDisplayTypeSwitchProps) {
+}: Readonly<ListDisplayTypeSwitchProps>) {
   const { theme } = useUnistyles();
   return (
     <TouchableOpacity {...rest} style={[styles.pressable, rest.style]}>

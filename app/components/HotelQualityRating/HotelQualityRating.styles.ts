@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native-unistyles';
 export const hotelQualityRatingStyles = StyleSheet.create(theme => ({
   wrapper: { flexDirection: 'row', columnGap: theme.sizes.s4 },
   starIcon: {
-    color: '#FFD33C',
+    color: theme.colors.stars1,
     variants: {
       size: {
         normal: {

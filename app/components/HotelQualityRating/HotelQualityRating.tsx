@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View } from 'react-native';
 
 import { IconStarFilled } from 'app/assets';
@@ -13,16 +13,18 @@ type HotelQualityRatingProps = {
 export function HotelQualityRating({
   stars,
   size = 'normal',
-}: HotelQualityRatingProps) {
+}: Readonly<HotelQualityRatingProps>) {
   styles.useVariants({
     size,
   });
 
-  return (
-    <View style={styles.wrapper}>
-      {Array.from({ length: stars }, (_, i) => (
+  const starsArray = useMemo(
+    () =>
+      Array.from({ length: stars }, (_, i) => (
         <IconStarFilled key={i} style={styles.starIcon} />
-      ))}
-    </View>
+      )),
+    [stars],
   );
+
+  return <View style={styles.wrapper}>{starsArray}</View>;
 }

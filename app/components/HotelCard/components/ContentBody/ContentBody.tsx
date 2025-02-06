@@ -49,7 +49,7 @@ export function ContentBody({
           <Text variant={'body3'}>{location.city}</Text>
         </View>
         <View style={styles.pricingWrapper}>
-          <Text style={styles.priceText} variant={'body2Black'}>
+          <Text variant={'body2Black'}>
             {priceWithCurrencySymbol({ price, currency })}
           </Text>
           <Text style={styles.durationText} variant={'caption1'}>
