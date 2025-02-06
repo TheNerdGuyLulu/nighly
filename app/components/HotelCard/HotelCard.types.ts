@@ -1,4 +1,6 @@
 export type HotelCardProps = {
-  onPress?: () => void;
   hotel: Nightly.Hotel;
+  onPress?: () => void;
+  isFavorite: boolean;
+  onFavoritePress?: () => void;
 };

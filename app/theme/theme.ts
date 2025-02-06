@@ -49,6 +49,7 @@ const light = {
     icon1: '#1a1818',
     icon2: '#c4a6ea',
     icon3: '#ddd',
+    icon4: '#f50d63',
 
     background1: '#fff',
     background2: '#fbfdff',
@@ -79,6 +80,7 @@ const dark = {
     icon1: '#e3e3e3',
     icon2: '#c4a6ea',
     icon3: '#000',
+    icon4: '#fff',
 
     background1: '#001524',
     background2: '#00385f',

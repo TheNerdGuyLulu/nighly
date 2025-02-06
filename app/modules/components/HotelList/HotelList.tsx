@@ -9,7 +9,7 @@ import {
   ScreenWrapper,
   useListDisplayType,
 } from 'app/components';
-import { useSorting } from 'app/hooks';
+import { useFavorites, useSorting } from 'app/hooks';
 import { RootNavigatorScreenNames } from 'app/navigation';
 
 import { ListHeader, SortBottomSheet } from './components';
@@ -32,6 +32,8 @@ export function HotelList({
 }: HotelListProps) {
   const { listDisplayType, onToggleListDisplayType } = useListDisplayType();
   const bottomSheetRef = useRef<BottomSheet>(null);
+
+  const { getIsFavorite, toggleFavorite } = useFavorites();
 
   const ListHeaderComponent = useMemo(() => {
     const onSortByPress = () => bottomSheetRef.current?.present();
@@ -64,12 +66,29 @@ export function HotelList({
 
   const renderItem = useCallback(
     ({ item }: ListRenderItemInfo<Nightly.Hotel>) => {
+      const isFavorite = getIsFavorite(item.id);
+      const toggleFav = () => toggleFavorite(item.id);
+
       if (listDisplayType === 'list') {
-        return <HotelListCard onPress={onPress(item)} hotel={item} />;
+        return (
+          <HotelListCard
+            onPress={onPress(item)}
+            hotel={item}
+            isFavorite={isFavorite}
+            onFavoritePress={toggleFav}
+          />
+        );
       }
-      return <HotelGridCard onPress={onPress(item)} hotel={item} />;
+      return (
+        <HotelGridCard
+          onPress={onPress(item)}
+          hotel={item}
+          isFavorite={isFavorite}
+          onFavoritePress={toggleFav}
+        />
+      );
     },
-    [listDisplayType, onPress],
+    [getIsFavorite, listDisplayType, onPress, toggleFavorite],
   );
 
   return (

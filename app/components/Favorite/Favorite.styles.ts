@@ -9,7 +9,4 @@ export const favoriteStyles = StyleSheet.create(theme => ({
     shadowOpacity: 1,
     shadowRadius: 4,
   },
-  icon: {
-    color: '#f50d63',
-  },
 }));

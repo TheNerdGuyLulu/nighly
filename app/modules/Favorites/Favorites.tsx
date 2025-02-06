@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { useApi, useSorting } from 'app/hooks';
+import { useApi, useFavorites, useSorting } from 'app/hooks';
 import {
   BottomTabNavigatorScreenNames,
   BottomTabNavigatorScreenProps,
 } from 'app/navigation';
-import { StateManager } from 'app/state';
 
 import { HotelList } from '../components';
 
@@ -13,7 +12,7 @@ type FavoritesProps =
   BottomTabNavigatorScreenProps<BottomTabNavigatorScreenNames.Favorites>;
 
 export function Favorites({ navigation }: Readonly<FavoritesProps>) {
-  const favorites = StateManager.favorites.use.favorites();
+  const { favorites } = useFavorites();
 
   const { data } = useApi();
 
