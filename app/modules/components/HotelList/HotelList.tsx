@@ -7,11 +7,13 @@ import {
   HotelGridCard,
   HotelListCard,
   ScreenWrapper,
+  useListDisplayType,
 } from 'app/components';
-import { ListHeader, SortBottomSheet } from 'app/modules/Home/components';
-import { homeStyles as styles } from 'app/modules/Home/Home.styles.ts';
-import { useListDisplayType, useSorting } from 'app/modules/Home/hooks';
+import { useSorting } from 'app/hooks';
 import { RootNavigatorScreenNames } from 'app/navigation';
+
+import { ListHeader, SortBottomSheet } from './components';
+import { hotelListStyles as styles } from './HotelList.styles.ts';
 
 type HotelListProps = {
   navigation: NavigationProp<any>;

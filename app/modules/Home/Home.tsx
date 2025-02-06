@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { HotelList } from 'app/modules/components';
+import { useApi, useSorting } from 'app/hooks';
 import {
   BottomTabNavigatorScreenNames,
   BottomTabNavigatorScreenProps,
 } from 'app/navigation';
 
-import { useApi, useSorting } from './hooks';
+import { HotelList } from '../components';
 
 type HomeProps =
   BottomTabNavigatorScreenProps<BottomTabNavigatorScreenNames.Home>;

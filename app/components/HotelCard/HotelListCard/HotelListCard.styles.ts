@@ -13,6 +13,12 @@ export const hotelListCardStyles = StyleSheet.create((theme, runtime) => {
       borderColor: theme.colors.border1,
       backgroundColor: theme.colors.background2,
     },
+    favorite: {
+      position: 'absolute',
+      zIndex: 2,
+      top: theme.sizes.s6,
+      left: theme.sizes.s6,
+    },
     thumbnail: {
       width: thumbnailWidth,
       height: 'auto',

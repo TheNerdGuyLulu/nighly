@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native-unistyles';
 
-export const homeStyles = StyleSheet.create(theme => ({
+export const hotelListStyles = StyleSheet.create(theme => ({
   contentContainer: {
     paddingHorizontal: theme.sizes.s16,
   },

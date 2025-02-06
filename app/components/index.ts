@@ -3,6 +3,7 @@ export * from './Button';
 export * from './HotelCard';
 export * from './HotelQualityRating';
 export * from './ListDisplayTypeSwitch';
+export * from './Favorite';
 export * from './Rating';
 export * from './ScreenWrapper';
 export * from './SortBy';

@@ -57,6 +57,8 @@ const light = {
     background5: '#eae8e8',
 
     stars1: '#ffd33c',
+
+    shadow1: '#fff',
   },
   ...sharedTheme,
 };
@@ -84,6 +86,8 @@ const dark = {
     background4: '#eeeefb',
 
     stars1: '#ffd33c',
+
+    shadow1: '#000',
   },
   ...sharedTheme,
 };

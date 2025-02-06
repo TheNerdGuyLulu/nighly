@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { HotelList } from 'app/modules/components';
-import { useApi, useSorting } from 'app/modules/Home/hooks';
+import { useApi, useSorting } from 'app/hooks';
 import {
   BottomTabNavigatorScreenNames,
   BottomTabNavigatorScreenProps,
 } from 'app/navigation';
 import { StateManager } from 'app/state';
+
+import { HotelList } from '../components';
 
 type FavoritesProps =
   BottomTabNavigatorScreenProps<BottomTabNavigatorScreenNames.Favorites>;
