@@ -1,19 +1,46 @@
-import React, { useEffect } from 'react';
-import { Image, View } from 'react-native';
+import React, { useRef } from 'react';
+import { ScrollView, TouchableOpacity, View } from 'react-native';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 
-export function Hotel({ navigation, route }) {
-  const { hotel } = route.params as { hotel: Nightly.Hotel };
+import { BottomSheet, Text } from 'app/components';
+import {
+  RootNavigatorScreenNames,
+  RootNavigatorScreenProps,
+} from 'app/navigation';
+import { StateManager } from 'app/state';
 
-  useEffect(() => {
-    navigation.setOptions({ title: hotel.name });
-  }, []);
+import { Body, Footer, FullDescriptionBottomSheet, Header } from './components';
+import { hotelStyles as styles } from './Hotel.styles.ts';
+
+type HotelProps = RootNavigatorScreenProps<RootNavigatorScreenNames.Hotel>;
+
+export function Hotel({ route }: Readonly<HotelProps>) {
+  const { hotel } = route.params;
+  const bottomSheetRef = useRef<BottomSheet>(null);
+  const addToFavorites = StateManager.favorites.use.addToFavorites();
+
+  const onReadMorePress = () => bottomSheetRef.current?.present();
 
   return (
-    <View>
-      <Image
-        style={{ width: '100%', height: 200 }}
-        source={{ uri: hotel.gallery[0] }}
+    <BottomSheetModalProvider>
+      <ScrollView>
+        <View style={styles.headerWrapper}>
+          <Header hotel={hotel} />
+        </View>
+        <TouchableOpacity onPress={() => addToFavorites(hotel.id)}>
+          <Text variant={'body3Medium'}>Add to Favorites</Text>
+        </TouchableOpacity>
+        <View style={styles.bodyWrapper}>
+          <Body hotel={hotel} onReadMorePress={onReadMorePress} />
+        </View>
+      </ScrollView>
+      <Footer price={hotel.price} currency={hotel.currency} />
+
+      <FullDescriptionBottomSheet
+        ref={bottomSheetRef}
+        name={hotel.name}
+        location={hotel.location}
       />
-    </View>
+    </BottomSheetModalProvider>
   );
 }
