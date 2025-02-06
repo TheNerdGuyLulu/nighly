@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native-unistyles';
 
-export const headerStyles = StyleSheet.create(theme => ({
+export const headerStyles = StyleSheet.create((theme, runtime) => ({
   wrapper: {
     padding: theme.sizes.s16,
     rowGap: theme.sizes.s8,
