@@ -8,6 +8,6 @@ export const buttonStyles = StyleSheet.create(theme => ({
     backgroundColor: '#22223b',
   },
   text: {
-    color: '#fff',
+    color: theme.colors.text4,
   },
 }));

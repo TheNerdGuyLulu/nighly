@@ -9,7 +9,7 @@ export type TextVariants = TextStylesVariants['variant'];
 
 export type TextProps = RNTextProps & Pick<TextStylesVariants, 'variant'>;
 
-export function Text({ style, variant, ...props }: TextProps) {
+export function Text({ style, variant, ...props }: Readonly<TextProps>) {
   styles.useVariants({
     variant,
   });

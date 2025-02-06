@@ -45,6 +45,10 @@ export const textStyles = StyleSheet.create(theme => ({
           fontSize: theme.fontSizes.s12,
           fontFamily: theme.fontFamilies.MADETommySoftRegular,
         },
+        caption2Medium: {
+          fontSize: theme.fontSizes.s10,
+          fontFamily: theme.fontFamilies.MADETommySoftMedium,
+        },
       },
     },
   },
