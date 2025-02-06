@@ -14,6 +14,7 @@ const sharedTheme = {
     s32: s(32),
   },
   fontSizes: {
+    s10: s(10),
     s12: s(12),
     s13: s(13),
     s14: s(14),
@@ -34,41 +35,55 @@ const sharedTheme = {
 
 const light = {
   colors: {
-    primary: '#4C4DDC',
+    primary: '#4c4ddc',
     darkBlue1: '#0081a7',
 
     border1: '#eee',
 
     text1: '#000',
     text2: '#434346',
+    text3: '#313131',
+    text4: '#fff',
+    text5: '#9b9696',
 
     icon1: '#1a1818',
+    icon2: '#c4a6ea',
+    icon3: '#ddd',
 
     background1: '#fff',
     background2: '#fbfdff',
     background3: '#e5e5e5',
     background4: '#c8c8f4',
     background5: '#eae8e8',
+
+    stars1: '#ffd33c',
   },
   ...sharedTheme,
 };
 
 const dark = {
   colors: {
-    primary: '#4C4DDC',
+    primary: '#4c4ddc',
     darkBlue1: '#0081a7',
 
     border1: 'transparent',
 
     text1: '#fff',
     text2: '#ddc9c9',
+    text3: '#e7d7d7',
+    text4: '#fff',
+    text5: '#9b9696',
 
     icon1: '#e3e3e3',
+    icon2: '#c4a6ea',
+    icon3: '#000',
 
     background1: '#001524',
     background2: '#00385f',
     background3: '#074671',
     background4: '#eeeefb',
+
+    stars1: '#ffd33c',
   },
   ...sharedTheme,
 };

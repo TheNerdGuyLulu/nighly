@@ -8117,6 +8117,7 @@ __metadata:
     react-native-bootsplash: "npm:^6.3.3"
     react-native-edge-to-edge: "npm:^1.4.3"
     react-native-gesture-handler: "npm:^2.22.1"
+    react-native-mmkv-storage: "npm:^0.11.2"
     react-native-nitro-modules: "npm:^0.21.0"
     react-native-pager-view: "npm:^6.7.0"
     react-native-reanimated: "npm:^3.16.7"
@@ -8127,6 +8128,7 @@ __metadata:
     react-native-unistyles: "npm:3.0.0-beta.6"
     react-test-renderer: "npm:18.3.1"
     typescript: "npm:5.0.4"
+    zustand: "npm:^5.0.3"
   languageName: unknown
   linkType: soft
 
@@ -8991,6 +8993,17 @@ __metadata:
     react: ">=18.2.0"
     react-native: ">=0.73.0"
   checksum: 10c0/5690e521e8310d21643634a8d0dacd524e19b76695f347b26f649fcac156a7a901fd6daef7f78482381a41e8445f4552f40ade13790fdf112fab15b0f54dbabd
+  languageName: node
+  linkType: hard
+
+"react-native-mmkv-storage@npm:^0.11.2":
+  version: 0.11.2
+  resolution: "react-native-mmkv-storage@npm:0.11.2"
+  peerDependencies:
+    react-native: "*"
+  bin:
+    mmkv-link: autolink/postlink/run.js
+  checksum: 10c0/0b53482335c7a7963deff3534fa4887af705a300787462657ec9c3437bb31d938b72265dafac608a44f2c9c6426be2d1f4869364c26ad5b4de00f5494dbc517b
   languageName: node
   linkType: hard
 
@@ -11188,5 +11201,26 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "zustand@npm:5.0.3"
+  peerDependencies:
+    "@types/react": ">=18.0.0"
+    immer: ">=9.0.6"
+    react: ">=18.0.0"
+    use-sync-external-store: ">=1.2.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+    use-sync-external-store:
+      optional: true
+  checksum: 10c0/dad96c6c123fda088c583d5df6692e9245cd207583078dc15f93d255a67b0f346bad4535545c98852ecde93d254812a0c799579dfde2ab595016b99fbe20e4d5
   languageName: node
   linkType: hard
