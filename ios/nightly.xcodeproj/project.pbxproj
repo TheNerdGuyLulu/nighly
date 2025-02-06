@@ -26,18 +26,18 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = nightly/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = nightly/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = nightly/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1BCD012E71C54AB5B1BFCA9E /* MADE Tommy Soft Extra Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Extra Bold.otf"; path = "../app/assets/fonts/MADE Tommy Soft Extra Bold.otf"; sourceTree = "<group>"; };
-		3683890B737D41B1AD138D61 /* MADE Tommy Soft Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Regular.otf"; path = "../app/assets/fonts/MADE Tommy Soft Regular.otf"; sourceTree = "<group>"; };
+		1BCD012E71C54AB5B1BFCA9E /* MADE Tommy Soft Extra Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Extra Bold.otf"; path = "../app/assets/fonts/MADE Tommy Soft Extra Bold.otf"; sourceTree = "<group>"; };
+		3683890B737D41B1AD138D61 /* MADE Tommy Soft Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Regular.otf"; path = "../app/assets/fonts/MADE Tommy Soft Regular.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-nightly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nightly.debug.xcconfig"; path = "Target Support Files/Pods-nightly/Pods-nightly.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-nightly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nightly.release.xcconfig"; path = "Target Support Files/Pods-nightly/Pods-nightly.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-nightly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nightly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = nightly/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = nightly/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A3C617A2ACFD444F9913798D /* MADE Tommy Soft Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Light.otf"; path = "../app/assets/fonts/MADE Tommy Soft Light.otf"; sourceTree = "<group>"; };
-		A4631596369A4AF2935F094F /* MADE Tommy Soft Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Black.otf"; path = "../app/assets/fonts/MADE Tommy Soft Black.otf"; sourceTree = "<group>"; };
-		B971BDA0FBAE4D308E54D31F /* MADE Tommy Soft Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Bold.otf"; path = "../app/assets/fonts/MADE Tommy Soft Bold.otf"; sourceTree = "<group>"; };
-		C57E08530FA64FACAD572261 /* MADE Tommy Soft Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Thin.otf"; path = "../app/assets/fonts/MADE Tommy Soft Thin.otf"; sourceTree = "<group>"; };
-		D5BB9E2D02914F839D1301B2 /* MADE Tommy Soft Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Medium.otf"; path = "../app/assets/fonts/MADE Tommy Soft Medium.otf"; sourceTree = "<group>"; };
+		A3C617A2ACFD444F9913798D /* MADE Tommy Soft Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Light.otf"; path = "../app/assets/fonts/MADE Tommy Soft Light.otf"; sourceTree = "<group>"; };
+		A4631596369A4AF2935F094F /* MADE Tommy Soft Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Black.otf"; path = "../app/assets/fonts/MADE Tommy Soft Black.otf"; sourceTree = "<group>"; };
+		B971BDA0FBAE4D308E54D31F /* MADE Tommy Soft Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Bold.otf"; path = "../app/assets/fonts/MADE Tommy Soft Bold.otf"; sourceTree = "<group>"; };
+		C57E08530FA64FACAD572261 /* MADE Tommy Soft Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Thin.otf"; path = "../app/assets/fonts/MADE Tommy Soft Thin.otf"; sourceTree = "<group>"; };
+		D5BB9E2D02914F839D1301B2 /* MADE Tommy Soft Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MADE Tommy Soft Medium.otf"; path = "../app/assets/fonts/MADE Tommy Soft Medium.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -414,10 +414,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -486,10 +483,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
