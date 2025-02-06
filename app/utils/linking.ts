@@ -6,7 +6,7 @@ export const linkTo =
 
     if (type === 'location') {
       prefix = Platform.select({
-        ios: 'map:',
+        ios: 'https://maps.apple.com/?q=',
         android: 'geo',
         default: 'geo:',
       });
