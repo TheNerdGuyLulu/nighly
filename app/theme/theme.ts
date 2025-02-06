@@ -35,10 +35,8 @@ const sharedTheme = {
 
 const light = {
   colors: {
-    primary: '#4c4ddc',
-    darkBlue1: '#0081a7',
-
     border1: '#eee',
+    border2: '#3a2746',
 
     text1: '#000',
     text2: '#434346',
@@ -47,15 +45,18 @@ const light = {
     text5: '#9b9696',
 
     icon1: '#1a1818',
-    icon2: '#c4a6ea',
+    icon2: '#bbabcd',
     icon3: '#ddd',
     icon4: '#f50d63',
+
+    indicatorsEnabled: '#074671',
+    indicatorsDisabled: '#fff',
 
     background1: '#fff',
     background2: '#fbfdff',
     background3: '#e5e5e5',
-    background4: '#c8c8f4',
-    background5: '#eae8e8',
+    background4: '#f1f1f6',
+    background5: '#f4f4f4',
 
     stars1: '#ffd33c',
 
@@ -66,10 +67,8 @@ const light = {
 
 const dark = {
   colors: {
-    primary: '#4c4ddc',
-    darkBlue1: '#0081a7',
-
     border1: 'transparent',
+    border2: '#eee',
 
     text1: '#fff',
     text2: '#ddc9c9',
@@ -78,14 +77,18 @@ const dark = {
     text5: '#9b9696',
 
     icon1: '#e3e3e3',
-    icon2: '#c4a6ea',
+    icon2: '#dbd7e1',
     icon3: '#000',
     icon4: '#fff',
+
+    indicatorsEnabled: '#163244',
+    indicatorsDisabled: '#eee',
 
     background1: '#001524',
     background2: '#00385f',
     background3: '#074671',
-    background4: '#eeeefb',
+    background4: '#163244',
+    background5: '#3c3c3c',
 
     stars1: '#ffd33c',
 
