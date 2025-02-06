@@ -8,8 +8,6 @@ import {
   RootNavigatorScreenNames,
 } from 'app/navigation';
 
-import { detailsFavouriteHeaderElementStyles as styles } from './DetailsFavouriteHeaderElement.styles.ts';
-
 type DetailsFavouriteHeaderElementProps = {
   route: RouteProp<RootNavigatorParamList, RootNavigatorScreenNames.Hotel>;
 };
@@ -27,11 +25,5 @@ export function DetailsFavouriteHeaderElement({
 
   const onFavoritePress = () => toggleFavorite(params?.hotel.id);
 
-  return (
-    <Favorite
-      style={styles.favorite}
-      onPress={onFavoritePress}
-      isFavorite={isFavorite}
-    />
-  );
+  return <Favorite onPress={onFavoritePress} isFavorite={isFavorite} />;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useUnistyles } from 'react-native-unistyles';
 import { RouteProp } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -17,6 +18,8 @@ const FavoriteHeaderRightElement =
   () => <DetailsFavouriteHeaderElement route={route} />;
 
 export function RootNavigator() {
+  const { theme } = useUnistyles();
+
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -32,6 +35,7 @@ export function RootNavigator() {
         options={({ route }) => ({
           headerBackButtonDisplayMode: 'minimal',
           headerTitle: '',
+          headerTintColor: theme.colors.icon1,
           headerRight: FavoriteHeaderRightElement(route),
         })}
       />

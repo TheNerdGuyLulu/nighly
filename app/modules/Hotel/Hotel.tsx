@@ -30,7 +30,6 @@ export function Hotel({ route }: Readonly<HotelProps>) {
         </View>
       </ScrollView>
       <Footer price={hotel.price} currency={hotel.currency} />
-
       <FullDescriptionBottomSheet
         ref={bottomSheetRef}
         name={hotel.name}

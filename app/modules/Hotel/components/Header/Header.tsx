@@ -1,6 +1,5 @@
 import React from 'react';
-import { Pressable, View } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { View } from 'react-native';
 
 import { HotelQualityRating, Rating, Text } from 'app/components';
 
@@ -15,12 +14,9 @@ type HeaderProps = {
 export function Header({
   hotel: { name, stars, userRating, gallery },
 }: Readonly<HeaderProps>) {
-  const { goBack } = useNavigation();
   return (
     <View>
-      <Pressable onPress={goBack}>
-        <Carousel gallery={gallery} />
-      </Pressable>
+      <Carousel gallery={gallery} />
       <View style={styles.wrapper}>
         <View style={styles.ratingsWrapper}>
           <HotelQualityRating stars={stars} size={'large'} />

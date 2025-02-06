@@ -8,7 +8,7 @@ export const footerStyles = StyleSheet.create((theme, runtime) => ({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: theme.colors.background1,
+    backgroundColor: theme.colors.background2,
     shadowOffset: {
       width: 0,
       height: 4,

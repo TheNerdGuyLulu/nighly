@@ -18,7 +18,7 @@ export const sortBottomSheetStyles = StyleSheet.create((theme, runtime) => ({
   pressable: (active: boolean) => ({
     paddingHorizontal: theme.sizes.s8,
     borderRadius: theme.sizes.s6,
-    backgroundColor: active ? '#f4f4f4' : undefined,
+    backgroundColor: active ? theme.colors.background5 : undefined,
     paddingVertical: theme.sizes.s12,
   }),
 }));
