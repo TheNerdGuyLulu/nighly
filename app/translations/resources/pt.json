@@ -1,4 +1,16 @@
 {
+  "sorting": {
+    "sortByTitle": "Ordenar",
+    "sortBy": "Ordenar por ",
+    "default": "predefinição",
+    "price": "preço",
+    "stars": "estrelas",
+    "userRating": "avaliação",
+    "byDefault": "Por predefinição",
+    "byPrice": "Por preço",
+    "byStarsRating": "Por classificação do hotel",
+    "byUserRating": "Por avaliação dos utilizadores"
+  },
   "hotel": {
     "detailsSection": {
       "detailsTitle": "Detalhes",

@@ -37,6 +37,10 @@ export const textStyles = StyleSheet.create(theme => ({
           fontSize: theme.fontSizes.s13,
           fontFamily: theme.fontFamilies.MADETommySoftRegular,
         },
+        body3Medium: {
+          fontSize: theme.fontSizes.s13,
+          fontFamily: theme.fontFamilies.MADETommySoftMedium,
+        },
         caption1: {
           fontSize: theme.fontSizes.s12,
           fontFamily: theme.fontFamilies.MADETommySoftRegular,

@@ -5,7 +5,7 @@ import { useUnistyles } from 'react-native-unistyles';
 import { IconList, IconRectangleGrid } from 'app/assets';
 
 import { listDisplayTypeSwitchStyles as styles } from './ListDisplayTypeSwitch.styles.ts';
-import { ListDisplayTypeSwitchProps } from './ListDisplayTypeSwitch.types';
+import { ListDisplayTypeSwitchProps } from './ListDisplayTypeSwitch.types.ts';
 
 export function ListDisplayTypeSwitch({
   type,
@@ -13,7 +13,7 @@ export function ListDisplayTypeSwitch({
 }: ListDisplayTypeSwitchProps) {
   const { theme } = useUnistyles();
   return (
-    <TouchableOpacity {...rest}>
+    <TouchableOpacity {...rest} style={[styles.pressable, rest.style]}>
       {type === 'card' ? (
         <IconRectangleGrid color={theme.colors.icon1} style={styles.icon} />
       ) : (

@@ -8,23 +8,37 @@ import { listHeaderStyles as styles } from './ListHeader.styles.ts';
 type ListHeaderProps = {
   listDisplayType: ListDisplayType;
   onDisplayTypePressHandler: () => void;
-  sortBy: string;
+  sortDirection: Nightly.SortDirection;
+  sortBy: Nightly.SortBy;
+  onSortByPress: () => void;
+  onDirectionPress: () => void;
 };
 
 export function ListHeader({
   listDisplayType,
   onDisplayTypePressHandler,
   sortBy,
-}: ListHeaderProps) {
+  sortDirection,
+  onSortByPress,
+  onDirectionPress,
+}: Readonly<ListHeaderProps>) {
   return (
     <View style={styles.wrapper}>
       <ListDisplayTypeSwitch
-        style={styles.sortDisplayItemWrapper}
         type={listDisplayType}
         onPress={onDisplayTypePressHandler}
       />
 
-      <SortBy sortBy={sortBy} style={styles.sortDisplayItemWrapper} />
+      <SortBy
+        direction={sortDirection}
+        sortByPressable={{
+          onPress: onSortByPress,
+        }}
+        directionPressable={{
+          onPress: onDirectionPress,
+        }}
+        sortBy={sortBy}
+      />
     </View>
   );
 }

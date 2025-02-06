@@ -33,10 +33,8 @@ export const contentBodyStyles = StyleSheet.create(theme => ({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  priceText: {
-    color: '#003049',
-  },
+  priceText: {},
   durationText: {
-    color: '#434346',
+    color: theme.colors.text2,
   },
 }));

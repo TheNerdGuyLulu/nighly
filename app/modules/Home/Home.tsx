@@ -1,37 +1,67 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useRef } from 'react';
 import { FlatList, ListRenderItemInfo, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HotelGridCard, HotelListCard } from 'app/components';
-import { HomeNavigatorScreenProps } from 'app/navigation';
-import { HomeNavigatorScreenNames } from 'app/navigation/constants';
+import {
+  BottomSheet,
+  HotelGridCard,
+  HotelListCard,
+  ScreenWrapper,
+} from 'app/components';
+import {
+  BottomTabNavigatorScreenNames,
+  BottomTabNavigatorScreenProps,
+  RootNavigatorScreenNames,
+} from 'app/navigation';
 
-import { ListHeader } from './components';
+import { ListHeader, SortBottomSheet } from './components';
 import { homeStyles as styles } from './Home.styles.ts';
-import { useApi, useListDisplayType } from './hooks';
+import { useApi, useListDisplayType, useSorting } from './hooks';
 
 const ItemSeparatorComponent = () => <View style={styles.itemSeparator} />;
 
-type HomeProps = HomeNavigatorScreenProps<HomeNavigatorScreenNames.Home>;
+type HomeProps =
+  BottomTabNavigatorScreenProps<BottomTabNavigatorScreenNames.Home>;
 
-export function Home({ navigation }: HomeProps) {
+export function Home({ navigation }: Readonly<HomeProps>) {
   const { listDisplayType, onToggleListDisplayType } = useListDisplayType();
+  const bottomSheetRef = useRef<BottomSheet>(null);
 
-  const { data, sortBy } = useApi();
+  const { data } = useApi();
+
+  const {
+    sortedHotels,
+    sortOptions,
+    sortBy,
+    setSortBy,
+    sortDirection,
+    toggleSortDirection,
+  } = useSorting({
+    hotels: data,
+  });
 
   const ListHeaderComponent = useMemo(() => {
+    const onSortByPress = () => bottomSheetRef.current?.present();
     return (
       <ListHeader
+        onSortByPress={onSortByPress}
+        onDirectionPress={toggleSortDirection}
         onDisplayTypePressHandler={onToggleListDisplayType}
         listDisplayType={listDisplayType}
         sortBy={sortBy}
+        sortDirection={sortDirection}
       />
     );
-  }, [listDisplayType, onToggleListDisplayType, sortBy]);
+  }, [
+    listDisplayType,
+    onToggleListDisplayType,
+    sortBy,
+    sortDirection,
+    toggleSortDirection,
+  ]);
 
   const onPress = useCallback(
     (hotel: Nightly.Hotel) => () => {
-      navigation.navigate(HomeNavigatorScreenNames.Hotel, {
+      navigation.navigate(RootNavigatorScreenNames.Hotel, {
         hotel,
       });
     },
@@ -45,21 +75,29 @@ export function Home({ navigation }: HomeProps) {
       }
       return <HotelGridCard onPress={onPress(item)} hotel={item} />;
     },
-    [listDisplayType],
+    [listDisplayType, onPress],
   );
 
   return (
-    <SafeAreaView edges={['top', 'left', 'right']}>
-      <FlatList<Nightly.Hotel>
-        contentContainerStyle={styles.contentContainer}
-        ListHeaderComponent={ListHeaderComponent}
-        ItemSeparatorComponent={ItemSeparatorComponent}
-        data={data}
-        renderItem={renderItem}
-        // I will not add keyExtract since data items contain an id key, which by default will be selected
-        // It checks item.key, then item.id, and then falls back to using the index
-        // https://reactnative.dev/docs/flatlist#keyextractor
+    <>
+      <ScreenWrapper>
+        <FlatList<Nightly.Hotel>
+          contentContainerStyle={styles.contentContainer}
+          ListHeaderComponent={ListHeaderComponent}
+          ItemSeparatorComponent={ItemSeparatorComponent}
+          data={sortedHotels}
+          renderItem={renderItem}
+          // I will not add keyExtract since data items contain an id key, which by default will be selected
+          // It checks item.key, then item.id, and then falls back to using the index
+          // https://reactnative.dev/docs/flatlist#keyextractor
+        />
+      </ScreenWrapper>
+      <SortBottomSheet
+        sortBy={sortBy}
+        ref={bottomSheetRef}
+        onSelect={setSortBy}
+        options={sortOptions}
       />
-    </SafeAreaView>
+    </>
   );
 }

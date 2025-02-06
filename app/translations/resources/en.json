@@ -1,4 +1,16 @@
 {
+  "sorting": {
+    "sortByTitle": "Sort By",
+    "sortBy": "Sort by ",
+    "default": "default",
+    "price": "price",
+    "stars": "stars",
+    "userRating": "rating",
+    "byDefault": "By default",
+    "byPrice": "By price",
+    "byStarsRating": "By hotel rating",
+    "byUserRating": "By user rating"
+  },
   "hotel": {
     "detailsSection": {
       "detailsTitle": "Details",

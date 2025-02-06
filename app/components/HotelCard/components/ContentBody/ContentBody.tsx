@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { View } from 'react-native';
 
 import { priceWithCurrencySymbol } from 'app/utils';
@@ -25,7 +26,11 @@ export function ContentBody({
   price,
   currency,
   displayType,
-}: ContentBodyProps) {
+}: Readonly<ContentBodyProps>) {
+  const { t } = useTranslation('translation', {
+    keyPrefix: 'hotel.pricing',
+  });
+
   styles.useVariants({
     displayType,
   });
@@ -47,9 +52,8 @@ export function ContentBody({
           <Text style={styles.priceText} variant={'body2Black'}>
             {priceWithCurrencySymbol({ price, currency })}
           </Text>
-          <Text style={styles.durationText} variant={'Caption1'}>
-            {' '}
-            / night
+          <Text style={styles.durationText} variant={'caption1'}>
+            {t('perNight')}
           </Text>
         </View>
       </View>

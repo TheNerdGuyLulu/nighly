@@ -3,6 +3,7 @@ import BootSplash from 'react-native-bootsplash';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useUnistyles } from 'react-native-unistyles';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 
 import { RootNavigator } from './navigation';
@@ -29,9 +30,11 @@ export default function App() {
   return (
     <GestureHandlerRootView>
       <SafeAreaProvider>
-        <NavigationContainer theme={navTheme} onReady={onNavigationReady}>
-          <RootNavigator />
-        </NavigationContainer>
+        <BottomSheetModalProvider>
+          <NavigationContainer theme={navTheme} onReady={onNavigationReady}>
+            <RootNavigator />
+          </NavigationContainer>
+        </BottomSheetModalProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

@@ -8,16 +8,17 @@ import {
 
 import { IllustrationNightlyBG } from 'app/assets';
 
-type ThumbnailProps = Pick<Nightly.Hotel, 'gallery'> & {
+type ThumbnailProps = {
+  source: string;
   imageStyle: ImageProps['style'];
 };
 
-export function Thumbnail({ gallery, imageStyle }: ThumbnailProps) {
+export function Thumbnail({ source, imageStyle }: Readonly<ThumbnailProps>) {
   const [loadFailed, setLoadFailed] = useState<
     NativeSyntheticEvent<ImageErrorEventData> | undefined
   >(undefined);
 
-  if (!gallery.length || loadFailed) {
+  if (!source || loadFailed) {
     // I could use an SVG here, but it's flickering a bit when changing between list and card display types
     return <Image style={imageStyle} source={IllustrationNightlyBG} />;
   }
@@ -26,7 +27,7 @@ export function Thumbnail({ gallery, imageStyle }: ThumbnailProps) {
     <Image
       onError={setLoadFailed}
       style={imageStyle}
-      source={{ uri: gallery[0] }}
+      source={{ uri: source }}
     />
   );
 }

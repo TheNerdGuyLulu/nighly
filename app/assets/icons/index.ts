@@ -1,5 +1,6 @@
 export { default as Icon24 } from './24.svg';
-export { default as IconArrowUpDown } from './arrow-up-down.svg';
+export { default as IconArrowUp } from './arrow-up.svg';
+export { default as IconArrowDown } from './arrow-down.svg';
 export { default as IconBell } from './bell.svg';
 export { default as IconCoffeeCup } from './coffee-cup.svg';
 export { default as IconForkKnife } from './fork-knife.svg';
@@ -16,3 +17,5 @@ export { default as IconSwimming } from './swimming.svg';
 export { default as IconTreadmill } from './treadmill.svg';
 export { default as IconWheelchair } from './wheelchair.svg';
 export { default as IconWifi } from './wifi.svg';
+export { default as IconNightly } from './nightly.svg';
+export { default as IconNightlyDark } from './nightly-dark.svg';

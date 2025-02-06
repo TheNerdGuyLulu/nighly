@@ -16,7 +16,7 @@ declare namespace Nightly {
     email: string;
   };
 
-  type Contacts = keyof Nightly.Contact;
+  type Contacts = keyof Contact;
 
   // Currency could also be defined as "string".
   // However, there are only a limited number of currencies,
@@ -36,4 +36,8 @@ declare namespace Nightly {
     price: number;
     currency: Currency;
   };
+
+  type SortBy = 'price' | 'stars' | 'userRating' | 'default';
+
+  type SortDirection = 'Asc' | 'Desc';
 }
