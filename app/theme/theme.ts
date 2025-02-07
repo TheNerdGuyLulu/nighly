@@ -46,7 +46,7 @@ const light = {
 
     icon1: '#1a1818',
     icon2: '#bbabcd',
-    icon3: '#ddd',
+    icon3: '#bbb',
     icon4: '#f50d63',
 
     indicatorsEnabled: '#074671',
@@ -78,7 +78,7 @@ const dark = {
 
     icon1: '#e3e3e3',
     icon2: '#dbd7e1',
-    icon3: '#000',
+    icon3: '#656565',
     icon4: '#fff',
 
     indicatorsEnabled: '#163244',
