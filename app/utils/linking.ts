@@ -7,7 +7,7 @@ export const linkTo =
     if (type === 'location') {
       prefix = Platform.select({
         ios: 'https://maps.apple.com/?q=',
-        android: 'geo',
+        android: 'geo:',
         default: 'geo:',
       });
     } else if (type === 'phoneNumber') {

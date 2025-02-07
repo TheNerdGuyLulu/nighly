@@ -21,7 +21,7 @@ declare namespace Nightly {
   // Currency could also be defined as "string".
   // However, there are only a limited number of currencies,
   // maybe even more limited if the platform only supports a few
-  type Currency = 'EUR';
+  type Currency = 'EUR' | 'USD';
 
   type Hotel = {
     id: number;

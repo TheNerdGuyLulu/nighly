@@ -17,7 +17,7 @@ export function useFooterAppearAnimation() {
         duration: 500,
       }),
     );
-  }, []);
+  }, [openAnimationSV]);
 
   const animatedStyles = useAnimatedStyle(() => ({
     transform: [

@@ -17,6 +17,7 @@ export function useCarouselIndicatorsAnimation({
   indicatorIndex,
 }: CarouselIndicatorsAnimationArgs) {
   const { theme } = useUnistyles();
+
   const activeIndexSV = useDerivedValue(
     () => withTiming(Number(currentIndex.value === indicatorIndex)),
     [currentIndex, indicatorIndex],

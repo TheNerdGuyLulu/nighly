@@ -1,13 +1,13 @@
 import { StateStorage } from 'zustand/middleware';
 
-import { MMKV } from 'app/storage';
+import { mmkvStorage } from 'app/storage';
 
 export const storage: StateStorage = {
-  getItem: (key: string): string | null => MMKV.getString(key) ?? null,
+  getItem: (key: string): string | null => mmkvStorage.getString(key) ?? null,
   setItem: (key: string, value: string): void => {
-    MMKV.setString(key, value);
+    mmkvStorage.set(key, value);
   },
   removeItem: (key: string): void => {
-    MMKV.removeItem(key);
+    mmkvStorage.delete(key);
   },
 };
