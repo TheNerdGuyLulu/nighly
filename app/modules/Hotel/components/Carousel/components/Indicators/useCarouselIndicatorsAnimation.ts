@@ -31,5 +31,5 @@ export function useCarouselIndicatorsAnimation({
     ),
   }));
 
-  return { activeIndexSV, animatedStyles };
+  return { animatedStyles };
 }

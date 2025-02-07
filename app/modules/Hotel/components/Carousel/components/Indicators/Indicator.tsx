@@ -18,5 +18,10 @@ export function Indicator({
     indicatorIndex,
   });
 
-  return <Animated.View style={[styles.indicator, animatedStyles]} />;
+  return (
+    <Animated.View
+      testID={'indicator'}
+      style={[styles.indicator, animatedStyles]}
+    />
+  );
 }
