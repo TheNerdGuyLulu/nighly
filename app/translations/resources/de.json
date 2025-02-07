@@ -12,11 +12,11 @@
   "sorting": {
     "sortByTitle": "Sortieren",
     "sortBy": "Sortieren nach",
-    "default": "Standard",
-    "price": "Preis",
-    "stars": "Sterne",
-    "userRating": "Bewertung",
-    "byDefault": "Standard",
+    "default": "standard",
+    "price": "preis",
+    "stars": "sterne",
+    "userRating": "bewertung",
+    "byDefault": "standard",
     "byPrice": "Nach Preis",
     "byStarsRating": "Nach Hotelbewertung",
     "byUserRating": "Nach Benutzerbewertung"
