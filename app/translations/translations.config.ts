@@ -15,7 +15,7 @@ export const resources = {
   },
 } as const;
 
-const fallbackLng = Object.keys(resources)[1];
+const fallbackLng = Object.keys(resources)[0];
 
 const languageDetector: LanguageDetectorModule = {
   type: 'languageDetector',
