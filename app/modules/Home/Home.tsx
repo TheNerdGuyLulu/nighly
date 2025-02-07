@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { useApi, useSorting } from 'app/hooks';
+import { useGetHotels } from 'app/api/queries/useGetHotels.ts';
+import { useSorting } from 'app/hooks';
 import {
   BottomTabNavigatorScreenNames,
   BottomTabNavigatorScreenProps,
@@ -12,7 +13,7 @@ type HomeProps =
   BottomTabNavigatorScreenProps<BottomTabNavigatorScreenNames.Home>;
 
 export function Home({ navigation }: Readonly<HomeProps>) {
-  const { data } = useApi();
+  const { data } = useGetHotels();
 
   const sorting = useSorting({
     hotels: data,

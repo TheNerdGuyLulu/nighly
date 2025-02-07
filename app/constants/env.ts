@@ -3,5 +3,5 @@
   This would allow different backend environments (staging, production, etc)
  */
 export const ENV = {
-  api: 'https://technology.lastminute.com/api/hotel.json',
+  api: 'https://technology.lastminute.com/api',
 } as const;

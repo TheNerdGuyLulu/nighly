@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { useApi, useFavorites, useSorting } from 'app/hooks';
+import { useGetHotels } from 'app/api/queries/useGetHotels.ts';
+import { useFavorites, useSorting } from 'app/hooks';
 import {
   BottomTabNavigatorScreenNames,
   BottomTabNavigatorScreenProps,
@@ -14,7 +15,7 @@ type FavoritesProps =
 export function Favorites({ navigation }: Readonly<FavoritesProps>) {
   const { favorites } = useFavorites();
 
-  const { data } = useApi();
+  const { data } = useGetHotels();
 
   const sorting = useSorting({
     hotels: data?.filter(d => favorites.includes(d.id)),

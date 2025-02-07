@@ -5,6 +5,9 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useUnistyles } from 'react-native-unistyles';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import { QueryClientProvider } from '@tanstack/react-query';
+
+import { queryClient } from 'app/api/services';
 
 import { RootNavigator } from './navigation';
 
@@ -28,14 +31,16 @@ export default function App() {
   );
 
   return (
-    <GestureHandlerRootView>
-      <SafeAreaProvider>
-        <BottomSheetModalProvider>
-          <NavigationContainer theme={navTheme} onReady={onNavigationReady}>
-            <RootNavigator />
-          </NavigationContainer>
-        </BottomSheetModalProvider>
-      </SafeAreaProvider>
-    </GestureHandlerRootView>
+    <QueryClientProvider client={queryClient}>
+      <GestureHandlerRootView>
+        <SafeAreaProvider>
+          <BottomSheetModalProvider>
+            <NavigationContainer theme={navTheme} onReady={onNavigationReady}>
+              <RootNavigator />
+            </NavigationContainer>
+          </BottomSheetModalProvider>
+        </SafeAreaProvider>
+      </GestureHandlerRootView>
+    </QueryClientProvider>
   );
 }

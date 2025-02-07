@@ -1,6 +1,10 @@
 module.exports = {
   root: true,
-  extends: ['@react-native', 'plugin:prettier/recommended'],
+  extends: [
+    '@react-native',
+    'plugin:prettier/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
+  ],
   plugins: ['simple-import-sort', 'i18next'],
   rules: {
     'no-console': 'warn',

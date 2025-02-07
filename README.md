@@ -7,6 +7,7 @@ It contains the following structure:
 
 ```
 - app
+    - api           # connect to external services
     - assets        # icons, illustrations, fonts, overall assets that are exported from figma
     - components    # reusable components to be used throught the application
     - constants     # constants to be used through the application
