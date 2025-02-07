@@ -1,5 +1,5 @@
 
-# Nightly - Lastminute recruitment task
+# Nightly - lastminute.com recruitment task
 
 The project was created using the React Native CLI bootstrap.
 
@@ -38,7 +38,10 @@ The following libraries were used to build the app. Not all are listed, but this
 ### Notes:
 
 The project is using Unistyles version 3, which is on beta. There are some bugs noticeable in switching between light to dark theme.
-Since this is a non-production project, I decided to use it, as it's expected soon to transition to a stable release.
+Since this is a recruitment project, I decided to use it, as it's expected soon to transition to a stable release.
+
+It is also using the new architecture with Fabric.
+In my opinion, is still not production ready, but I decided to give a shot, since it's the future of React Native.
 
 
 # Features
@@ -116,6 +119,9 @@ There are some features I would have liked to have implemented, but due to lack 
 - A floating header on details screen that would change based on the scroll. This would require context API to connect the header in the navigator, with the scrollview in the screen
 - Full gallery. Opening an image in full screen with gesture support (e.g. zoom to pitch)
 
+What could be improved:
+- Pagination in the listing
+- Overall structure of components and modules. The lack of designs makes it hard to predict how components can be partitioned.
 # Getting Started
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
