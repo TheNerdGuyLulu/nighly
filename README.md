@@ -54,6 +54,60 @@ Since this is a non-production project, I decided to use it, as it's expected so
 - Open contacts on tapping
 
 
+### Code styling
+
+#### Functions
+
+For components and hooks the normal function should be used. 
+
+```ts
+
+function ComponentX() {
+  
+}
+
+function useHook() {
+  
+}
+```
+
+Functions outside the React realm are free to be normal or arrow functions. But arrow functions are preferable.
+
+
+#### Components
+
+Component types should be named as ComponentName + Props.
+
+```ts
+type ComponentProps = {}
+
+function Component(props: ComponentProps) {
+  
+}
+```
+
+Hook types should be name as HookNameWithoutUse + "Args".
+
+```ts
+type HookArgs = {}
+
+function useHook(props: HookArgs) {
+  
+}
+```
+
+#### Exporting modules
+
+All modules should use named exports, the only exception is for `App.tsx`.
+Named exports are easier to import and debug.
+
+```ts
+
+export function X() {
+  
+}
+```
+
 #### Notes:
 TouchableOpacity is being used to save time. Ideally, Pressable should be used instead, and create a custom animation.
 
