@@ -1,0 +1,62 @@
+{
+  "languages": {
+    "language": "Język",
+    "en": "English",
+    "it": "Italiano",
+    "de": "Deutsch",
+    "pl": "Polski",
+    "pt": "Português",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "sorting": {
+    "sortByTitle": "Sortuj",
+    "sortBy": "Sortuj według",
+    "default": "domyślnie",
+    "price": "cena",
+    "stars": "gwiazdki",
+    "userRating": "ocena",
+    "byDefault": "Domyślnie",
+    "byPrice": "Według ceny",
+    "byStarsRating": "Według oceny hotelu",
+    "byUserRating": "Według oceny użytkowników"
+  },
+  "hotel": {
+    "detailsSection": {
+      "detailsTitle": "Szczegóły",
+      "description": "{{name}} to luksusowy hotel, który oferuje idealne połączenie komfortu i stylu. Położony w sercu {{city}}, zapewnia idealne schronienie dla podróżujących służbowo i wypoczynkowo. Dzięki doskonałej obsłudze, nowoczesnym udogodnieniom i różnorodności opcji pokojowych, {{name}} gwarantuje niezapomniany pobyt dla wszystkich gości...",
+      "fullDescription": "{{name}} to luksusowy hotel, który oferuje idealne połączenie komfortu i stylu, będąc pierwszym wyborem dla podróżnych poszukujących relaksu i wygody. Położony w sercu {{city}}, ten zachwycający obiekt cieszy się doskonałą lokalizacją, zaledwie kilka minut od muzeów i dzielnic handlowych. Niezależnie od tego, czy przyjeżdżasz służbowo, wypoczynkowo, czy w obu celach, {{name}} zapewnia idylliczne schronienie, gdzie każdy szczegół jest przemyślany, aby przekroczyć oczekiwania.\n\nHotel łączy nowoczesną elegancję z ciepłą gościnnością, oferując różnorodne udogodnienia, które zaspokajają potrzeby wszystkich gości. Od przestronnych i elegancko urządzonych pokoi i apartamentów po światowej klasy opcje gastronomiczne, znajdziesz wszystko, czego potrzebujesz, aby poczuć się jak w domu. Obiekt obejmuje najnowocześniejsze udogodnienia, takie jak spa, siłownia i basen, zapewniając, że relaks i regeneracja są zawsze w zasięgu ręki. Dla podróżujących służbowo, {{name}} jest wyposażony w różnorodne sale konferencyjne i miejsca na wydarzenia, idealne na konferencje, seminaria i spotkania prywatne.\n\nTroskliwy zespół concierge jest zawsze dostępny, aby pomóc w rezerwacjach, organizacji transportu i rekomendacjach, zapewniając, że Twój pobyt będzie efektywny i przyjemny. Goście wypoczywający docenią bliskość głównych atrakcji, tętniących życiem ulic handlowych i restauracji gourmet, ciesząc się jednocześnie spokojnym azylem w spokojnej atmosferze hotelu. Niezależnie od tego, czy relaksujesz się w hotelowym spa, delektujesz się posiłkiem w restauracji signature, czy odpoczywasz przy basenie z koktajlem w ręku, {{name}} oferuje niezrównane doświadczenie luksusu i wygody. Każdy pokój w {{name}} jest starannie zaprojektowany, aby zaspokoić potrzeby nowoczesnego podróżnika.\n\nDzięki różnorodności typów pokoi, od przytulnych pokoi idealnych dla pojedynczych podróżników po przestronne apartamenty doskonałe dla rodzin i grup, każda przestrzeń jest oazą komfortu. Goście mogą cieszyć się wysokiej jakości udogodnieniami, takimi jak premium pościel, szybkie łącze internetowe i spersonalizowana obsługa pokojowa, zapewniając spokojny i produktywny pobyt. Z zaangażowaniem w nieskazitelną obsługę i niezapomniane wrażenia, {{name}} gwarantuje, że wszyscy goście wyjeżdżają z szczęśliwymi wspomnieniami i chęcią powrotu. Niezależnie od tego, czy jesteś tu na krótki wypad, czy dłuższy pobyt, Twój czas w {{name}} z pewnością będzie jednym z najważniejszych punktów Twojej podróży do {{city}}.",
+      "readMore": "Czytaj więcej"
+    },
+    "informationSection": {
+      "informationTitle": "Informacje",
+      "checkIn": "Zameldowanie:",
+      "fromTo": "{{from}} - {{to}}",
+      "checkOut": "Wymeldowanie:",
+      "address": "Adres:"
+    },
+    "contactsSection": {
+      "contactsTitle": "Kontakty",
+      "phoneNumber": "Telefon:",
+      "email": "Email:"
+    },
+    "featuresSection": {
+      "featuresTitle": "Udogodnienia",
+      "freeWifi": "Darmowe Wi-Fi",
+      "freeBreakfast": "Darmowe śniadanie",
+      "animalFriendly": "Przyjazny dla zwierząt",
+      "24HourFrontDesk": "Całodobowa recepcja",
+      "disabledGuestsFriendly": "Dostępny dla gości z niepełnosprawnością",
+      "privateParking": "Prywatny parking",
+      "indoorPool": "Basen wewnętrzny",
+      "teaCoffeeMakerInAllRooms": "Ekspres do herbaty/kawy w każdym pokoju",
+      "fitnessCenter": "Siłownia",
+      "roomService": "Obsługa pokojowa",
+      "airConditioned": "Klimatyzacja"
+    },
+    "pricing": {
+      "perNight": " /noc",
+      "reserveARoom": "Zarezerwuj pokój"
+    }
+  }
+}

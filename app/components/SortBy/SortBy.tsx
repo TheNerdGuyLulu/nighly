@@ -47,7 +47,7 @@ export function SortBy({
         {...sortByPressable}
         style={[styles.pressable, sortByPressable.style]}>
         <Text variant={'body3'} style={styles.text}>
-          {t('sortBy')}
+          {`${t('sortBy')} `}
           <Text variant={'body3Medium'}>{t(sortBy)}</Text>
         </Text>
       </TouchableOpacity>

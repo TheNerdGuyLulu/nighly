@@ -33,7 +33,7 @@ module.exports = {
 
     create: styles => {
       if (typeof styles === 'function') {
-        return styles(theme, runtime);
+        return { ...styles(theme, runtime), useVariants: () => ({}) };
       }
 
       return styles;

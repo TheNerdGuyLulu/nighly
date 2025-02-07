@@ -1,0 +1,62 @@
+{
+  "languages": {
+    "language": "Lingua",
+    "en": "English",
+    "it": "Italiano",
+    "de": "Deutsch",
+    "pl": "Polski",
+    "pt": "Português",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "sorting": {
+    "sortByTitle": "Ordina",
+    "sortBy": "Ordina per",
+    "default": "predefinito",
+    "price": "prezzo",
+    "stars": "stelle",
+    "userRating": "valutazione",
+    "byDefault": "Predefinito",
+    "byPrice": "Per prezzo",
+    "byStarsRating": "Per valutazione dell'hotel",
+    "byUserRating": "Per valutazione degli utenti"
+  },
+  "hotel": {
+    "detailsSection": {
+      "detailsTitle": "Dettagli",
+      "description": "{{name}} è un hotel di lusso che offre una combinazione perfetta di comfort e stile. Situato nel cuore di {{city}}, offre un rifugio ideale per viaggiatori di lavoro e di piacere. Con un servizio eccezionale, comfort moderni e una varietà di opzioni per le camere, {{name}} garantisce un soggiorno memorabile per tutti gli ospiti...",
+      "fullDescription": "{{name}} è un hotel di lusso che offre una combinazione perfetta di comfort e stile, essendo una scelta principale per i viaggiatori che cercano relax e convenienza. Situato nel cuore di {{city}}, questa proprietà mozzafiato vanta una posizione privilegiata, a pochi minuti da musei e distretti commerciali. Che siate qui per lavoro, piacere o entrambi, {{name}} offre un rifugio idilliaco dove ogni dettaglio è pensato per superare le aspettative.\n\nL'hotel combina sofisticazione moderna e ospitalità calorosa, offrendo una varietà di comfort che soddisfano le esigenze di tutti gli ospiti. Dalle camere e suite spaziose ed elegantemente arredate alle opzioni di ristorazione di classe mondiale, troverete tutto ciò di cui avete bisogno per sentirvi come a casa. La struttura include servizi all'avanguardia, come spa, palestra e piscina, garantendo che relax e rivitalizzazione siano sempre a portata di mano. Per i viaggiatori d'affari, {{name}} è dotato di una varietà di sale riunioni e spazi per eventi, ideali per conferenze, seminari e incontri privati.\n\nIl premuroso team di concierge è sempre disponibile per assistere con prenotazioni, organizzazione di trasporti e raccomandazioni, assicurando che il vostro soggiorno sia efficiente e piacevole. Gli ospiti in vacanza apprezzeranno la vicinanza alle principali attrazioni, strade commerciali vivaci e ristoranti gourmet, mentre godono di un rifugio tranquillo nell'ambiente sereno dell'hotel. Che vi stiate rilassando nella spa dell'hotel, gustando un pasto nel ristorante signature o riposando accanto alla piscina con un cocktail in mano, {{name}} offre un'esperienza impareggiabile di lusso e convenienza. Ogni camera di {{name}} è attentamente progettata per soddisfare le esigenze del viaggiatore moderno.\n\nCon una varietà di tipologie di camere, dalle camere intime perfette per viaggiatori singoli alle suite spaziose ideali per famiglie e gruppi, ogni spazio è un santuario di comfort. Gli ospiti possono godere di comfort di alta qualità, come biancheria da letto premium, internet ad alta velocità e servizio in camera personalizzato, garantendo un soggiorno tranquillo e produttivo. Con un impegno verso un servizio impeccabile e un'esperienza indimenticabile, {{name}} garantisce che tutti gli ospiti partano con ricordi felici e il desiderio di tornare. Che siate qui per una breve fuga o un soggiorno prolungato, il vostro tempo a {{name}} sarà senza dubbio un punto culminante del vostro viaggio a {{city}}.",
+      "readMore": "Leggi di più"
+    },
+    "informationSection": {
+      "informationTitle": "Informazioni",
+      "checkIn": "Check-in:",
+      "fromTo": "{{from}} - {{to}}",
+      "checkOut": "Check-out:",
+      "address": "Indirizzo:"
+    },
+    "contactsSection": {
+      "contactsTitle": "Contatti",
+      "phoneNumber": "Telefono:",
+      "email": "Email:"
+    },
+    "featuresSection": {
+      "featuresTitle": "Servizi",
+      "freeWifi": "Wi-fi gratuito",
+      "freeBreakfast": "Colazione gratuita",
+      "animalFriendly": "Animali ammessi",
+      "24HourFrontDesk": "Reception 24 ore",
+      "disabledGuestsFriendly": "Accessibile per ospiti con disabilità",
+      "privateParking": "Parcheggio privato",
+      "indoorPool": "Piscina interna",
+      "teaCoffeeMakerInAllRooms": "Macchina per tè/caffè in tutte le camere",
+      "fitnessCenter": "Palestra",
+      "roomService": "Servizio in camera",
+      "airConditioned": "Aria condizionata"
+    },
+    "pricing": {
+      "perNight": " /notte",
+      "reserveARoom": "Prenota una camera"
+    }
+  }
+}

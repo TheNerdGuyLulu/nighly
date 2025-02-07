@@ -40,4 +40,6 @@ declare namespace Nightly {
   type SortBy = 'price' | 'stars' | 'userRating' | 'default';
 
   type SortDirection = 'Asc' | 'Desc';
+
+  type Language = 'en' | 'it' | 'de' | 'pl' | 'pt' | 'es' | 'fr';
 }

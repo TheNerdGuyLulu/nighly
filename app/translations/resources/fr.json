@@ -1,0 +1,62 @@
+{
+  "languages": {
+    "language": "Langue",
+    "en": "English",
+    "it": "Italiano",
+    "de": "Deutsch",
+    "pl": "Polski",
+    "pt": "Português",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "sorting": {
+    "sortByTitle": "Trier",
+    "sortBy": "Trier par",
+    "default": "par défaut",
+    "price": "prix",
+    "stars": "étoiles",
+    "userRating": "évaluation",
+    "byDefault": "Par défaut",
+    "byPrice": "Par prix",
+    "byStarsRating": "Par classement de l'hôtel",
+    "byUserRating": "Par évaluation des utilisateurs"
+  },
+  "hotel": {
+    "detailsSection": {
+      "detailsTitle": "Détails",
+      "description": "{{name}} est un hôtel de luxe qui offre une combinaison parfaite de confort et de style. Situé au cœur de {{city}}, il constitue un refuge idéal pour les voyageurs d'affaires et de loisirs. Avec un service exceptionnel, des équipements modernes et une variété d'options de chambres, {{name}} garantit un séjour mémorable pour tous les invités...",
+      "fullDescription": "{{name}} est un hôtel de luxe qui offre une combinaison parfaite de confort et de style, constituant un choix de premier ordre pour les voyageurs en quête de détente et de commodité. Situé au cœur de {{city}}, cet établissement impressionnant bénéficie d'un emplacement privilégié, à quelques minutes seulement des musées et des quartiers commerciaux. Que vous voyagiez pour affaires, pour le plaisir ou les deux, {{name}} offre un refuge idyllique où chaque détail est pensé pour dépasser vos attentes.\n\nL'hôtel allie élégance moderne et hospitalité chaleureuse, proposant une variété d'équipements pour répondre aux besoins de tous les invités. Des chambres et suites spacieuses et élégamment décorées aux options gastronomiques de classe mondiale, vous trouverez tout ce dont vous avez besoin pour vous sentir comme chez vous. L'établissement comprend des installations ultramodernes, telles qu'un spa, une salle de sport et une piscine, garantissant que détente et revitalisation sont toujours à portée de main. Pour les voyageurs d'affaires, {{name}} est équipé d'une variété de salles de réunion et d'espaces événementiels, idéaux pour les conférences, séminaires et réunions privées.\n\nL'équipe de conciergerie attentionnée est toujours disponible pour aider avec les réservations, les arrangements de transport et les recommandations, assurant que votre séjour soit efficace et agréable. Les invités en vacances apprécieront la proximité des principales attractions, des rues commerçantes animées et des restaurants gastronomiques, tout en profitant d'un havre de paix dans l'atmosphère sereine de l'hôtel. Que vous vous détendiez au spa de l'hôtel, savouriez un repas au restaurant signature ou vous reposiez au bord de la piscine avec un cocktail à la main, {{name}} offre une expérience inégalée de luxe et de commodité. Chaque chambre de {{name}} est soigneusement conçue pour répondre aux besoins du voyageur moderne.\n\nAvec une variété de types de chambres, des chambres intimes parfaites pour les voyageurs individuels aux suites spacieuses idéales pour les familles et les groupes, chaque espace est un sanctuaire de confort. Les invités peuvent profiter d'équipements de haute qualité, tels qu'une literie haut de gamme, un internet haut débit et un service en chambre personnalisé, garantissant un séjour paisible et productif. Avec un engagement envers un service impeccable et une expérience inoubliable, {{name}} garantit que tous les invités repartent avec des souvenirs heureux et l'envie de revenir. Que vous soyez ici pour un court séjour ou un long séjour, votre temps à {{name}} sera sans aucun doute un point fort de votre voyage à {{city}}.",
+      "readMore": "Lire plus"
+    },
+    "informationSection": {
+      "informationTitle": "Informations",
+      "checkIn": "Check-in:",
+      "fromTo": "{{from}} - {{to}}",
+      "checkOut": "Check-out:",
+      "address": "Adresse:"
+    },
+    "contactsSection": {
+      "contactsTitle": "Contacts",
+      "phoneNumber": "Téléphone:",
+      "email": "E-mail:"
+    },
+    "featuresSection": {
+      "featuresTitle": "Équipements",
+      "freeWifi": "Wi-fi gratuit",
+      "freeBreakfast": "Petit-déjeuner gratuit",
+      "animalFriendly": "Animaux acceptés",
+      "24HourFrontDesk": "Réception 24 heures",
+      "disabledGuestsFriendly": "Accessible aux invités handicapés",
+      "privateParking": "Parking privé",
+      "indoorPool": "Piscine intérieure",
+      "teaCoffeeMakerInAllRooms": "Machine à thé/café dans toutes les chambres",
+      "fitnessCenter": "Centre de fitness",
+      "roomService": "Service en chambre",
+      "airConditioned": "Climatisation"
+    },
+    "pricing": {
+      "perNight": " /nuit",
+      "reserveARoom": "Réserver une chambre"
+    }
+  }
+}

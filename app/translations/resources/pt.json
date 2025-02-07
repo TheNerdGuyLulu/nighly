@@ -1,7 +1,17 @@
 {
+  "languages": {
+    "language": "Idioma",
+    "en": "English",
+    "it": "Italiano",
+    "de": "Deutsch",
+    "pl": "Polski",
+    "pt": "Português",
+    "es": "Español",
+    "fr": "Français"
+  },
   "sorting": {
     "sortByTitle": "Ordenar",
-    "sortBy": "Ordenar por ",
+    "sortBy": "Ordenar por",
     "default": "predefinição",
     "price": "preço",
     "stars": "estrelas",
@@ -14,7 +24,7 @@
   "hotel": {
     "detailsSection": {
       "detailsTitle": "Detalhes",
-      "description": "{{name}} é um hotel luxuoso que oferece uma combinação perfeita de conforto e estilo. Localizado no coração de {{city}}, proporciona um refúgio ideal para viajantes de negócios e lazer. Com serviço excecional, comodidades modernas e uma variedade de opções de quartos, {{name}} garante uma estadia memorável para todos os hóspedes... ",
+      "description": "{{name}} é um hotel luxuoso que oferece uma combinação perfeita de conforto e estilo. Localizado no coração de {{city}}, proporciona um refúgio ideal para viajantes de negócios e lazer. Com serviço excecional, comodidades modernas e uma variedade de opções de quartos, {{name}} garante uma estadia memorável para todos os hóspedes...",
       "fullDescription": "{{name}} é um hotel luxuoso que oferece uma combinação perfeita de conforto e estilo, sendo uma escolha de topo para viajantes que procuram relaxamento e conveniência. Localizado no coração de {{city}}, esta propriedade deslumbrante possui uma localização privilegiada, a poucos minutos de museus e distritos comerciais. Quer esteja a visitar por negócios, lazer ou ambos, {{name}} proporciona um refúgio idílico onde cada detalhe é pensado para exceder as expectativas.\n\nO hotel combina sofisticação moderna com hospitalidade calorosa, oferecendo uma variedade de comodidades que atendem às necessidades de todos os hóspedes. Desde quartos e suites espaçosos e elegantemente decorados até opções de gastronomia de classe mundial, encontrará tudo o que precisa para se sentir em casa. A propriedade inclui instalações de última geração, como um spa, ginásio e piscina, garantindo que o relaxamento e a revitalização estão sempre ao alcance. Para viajantes de negócios, {{name}} está equipado com uma variedade de salas de reuniões e espaços para eventos, ideais para conferências, seminários e reuniões privadas.\n\nA equipa de concierge atenciosa está sempre disponível para ajudar com reservas, arranjos de transporte e recomendações, garantindo que a sua estadia seja eficiente e agradável. Os hóspedes de lazer apreciarão a proximidade com as principais atrações, ruas comerciais vibrantes e restaurantes gourmet, enquanto desfrutam de um retiro tranquilo no ambiente sereno do hotel. Quer esteja a relaxar no spa do hotel, a desfrutar de uma refeição no restaurante signature ou a descansar junto à piscina com um cocktail na mão, {{name}} oferece uma experiência incomparável de luxo e conveniência. Cada quarto do {{name}} é cuidadosamente concebido para atender às necessidades do viajante moderno.\n\nCom uma variedade de tipos de quartos, desde quartos íntimos perfeitos para viajantes individuais até suites espaçosas ideais para famílias e grupos, cada espaço é um santuário de conforto. Os hóspedes podem desfrutar de comodidades de alta qualidade, como roupa de cama premium, internet de alta velocidade e serviço de quarto personalizado, garantindo uma estadia tranquila e produtiva. Com um compromisso com o serviço impecável e uma experiência inesquecível, {{name}} garante que todos os hóspedes partem com memórias felizes e o desejo de regressar. Quer esteja aqui para uma escapadela curta ou uma estadia prolongada, o seu tempo no {{name}} será sem dúvida um destaque da sua viagem em {{city}}.",
       "readMore": "Ler mais"
     },

@@ -19,7 +19,7 @@ function FullDescriptionBottomSheetBase(
   return (
     <BottomSheet ref={ref}>
       <BottomSheetScrollView style={styles.scrollView}>
-        <Text style={styles.text} variant={'body2'}>
+        <Text testID={'description'} style={styles.text} variant={'body2'}>
           {t('fullDescription', {
             name: name,
             city: location.city,

@@ -6,6 +6,7 @@ import {
   BottomSheet,
   HotelGridCard,
   HotelListCard,
+  LanguageSelectorBottomSheet,
   ScreenWrapper,
   useListDisplayType,
 } from 'app/components';
@@ -31,12 +32,16 @@ export function HotelList({
   sortOptions,
 }: HotelListProps) {
   const { listDisplayType, onToggleListDisplayType } = useListDisplayType();
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  const sortingBottomSheetRef = useRef<BottomSheet>(null);
+  const languageSelectBottomSheetRef = useRef<BottomSheet>(null);
 
   const { getIsFavorite, toggleFavorite } = useFavorites();
 
   const ListHeaderComponent = useMemo(() => {
-    const onSortByPress = () => bottomSheetRef.current?.present();
+    const onSortByPress = () => sortingBottomSheetRef.current?.present();
+    const onLanguageSelectPress = () =>
+      languageSelectBottomSheetRef.current?.present();
+
     return (
       <ListHeader
         onSortByPress={onSortByPress}
@@ -45,6 +50,7 @@ export function HotelList({
         listDisplayType={listDisplayType}
         sortBy={sortBy}
         sortDirection={sortDirection}
+        onLanguageSelectPress={onLanguageSelectPress}
       />
     );
   }, [
@@ -107,10 +113,11 @@ export function HotelList({
       </ScreenWrapper>
       <SortBottomSheet
         sortBy={sortBy}
-        ref={bottomSheetRef}
+        ref={sortingBottomSheetRef}
         onSelect={setSortBy}
         options={sortOptions}
       />
+      <LanguageSelectorBottomSheet ref={languageSelectBottomSheetRef} />
     </>
   );
 }

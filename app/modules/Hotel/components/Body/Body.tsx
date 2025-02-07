@@ -36,7 +36,7 @@ export function Body({
           {t('detailsSection.description', {
             name,
             city: location.city,
-          })}
+          })}{' '}
           <Text onPress={onReadMorePress} variant={'body2Medium'}>
             {t('detailsSection.readMore')}
           </Text>
@@ -49,7 +49,7 @@ export function Body({
         <View style={styles.featuresTagsWrapper}>
           {shuffledFeatures.map((props, i) => (
             <Tag
-              key={i}
+              key={props.description}
               {...props}
               description={t(`featuresSection.${props.description}`)}
             />
@@ -100,7 +100,7 @@ export function Body({
       <View style={styles.blockWrapper}>
         <Text variant={'header2'}>{t('contactsSection.contactsTitle')}</Text>
         {Object.entries(contact).map(([key, value], i) => (
-          <View key={i}>
+          <View key={key}>
             <Text variant={'body2Medium'}>
               {t(`contactsSection.${key as Nightly.Contacts}`)}
             </Text>
