@@ -38,7 +38,6 @@ describe('useSorting', () => {
         expect(result.current.sortBy).toEqual('default');
 
         act(() => {
-          console.log(sortBy, direction);
           result.current.setSortBy(sortBy);
           result.current.setSortDirection(direction);
         });
